@@ -1,0 +1,217 @@
+import React from 'react'
+
+import PropTypes from 'prop-types'
+
+const Hero = (props) => {
+  return (
+    <>
+      <div data-aos="fade" className={`hero-hero ${props.rootClassName} `}>
+        <span className="hero-text">{props.text2}</span>
+        <div className="hero-container">
+          <img
+            src={props.imagesrc2}
+            alt={props.imagealt2}
+            className="hero-image"
+          />
+          <img
+            src={props.imagesrc}
+            alt={props.imagealt}
+            className="hero-image1"
+          />
+          <img
+            src={props.imagesrc4}
+            alt={props.imagealt4}
+            className="hero-image2"
+          />
+        </div>
+        <h1 data-aos="fade-down" className="hero-text1">
+          {props.heading}
+        </h1>
+        <span data-aos="fade-down" className="hero-text2">
+          So you can be yourself
+        </span>
+        <a
+          href={props.heroButtonLink}
+          data-aos="fade-up"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="hero-link button"
+        >
+          {props.heroButtonText}
+        </a>
+      </div>
+      <style jsx>
+        {`
+          .hero-hero {
+            width: 100%;
+            display: flex;
+            padding: var(--dl-space-space-threeunits);
+            position: relative;
+            min-height: 80vh;
+            flex-direction: column;
+            background-size: cover;
+            background-image: url('/image-1500w.png');
+            background-attachment: fixed;
+          }
+          .hero-text {
+            color: var(--dl-color-gray-white);
+            font-size: 34px;
+            text-align: right;
+            font-family: 'Arial Black';
+          }
+          .hero-container {
+            width: 100%;
+            height: 920px;
+            display: flex;
+            position: relative;
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
+          }
+          .hero-image {
+            left: 40px;
+            width: 1000px;
+            bottom: 80px;
+            height: 67px;
+            position: absolute;
+            object-fit: cover;
+          }
+          .hero-image1 {
+            left: 815px;
+            width: 300px;
+            bottom: 50px;
+            height: auto;
+            position: absolute;
+            object-fit: cover;
+          }
+          .hero-image2 {
+            right: 100px;
+            width: 200px;
+            bottom: 80px;
+            position: absolute;
+            object-fit: cover;
+          }
+          .hero-text1 {
+            color: var(--dl-color-gray-white);
+            width: 676px;
+            display: none;
+            font-size: 5rem;
+            max-width: 550px;
+            margin-top: var(--dl-space-space-twounits);
+            text-align: center;
+            margin-bottom: var(--dl-space-space-twounits);
+          }
+          .hero-text2 {
+            color: var(--dl-color-gray-white);
+            display: none;
+            font-size: 1.5rem;
+            font-family: 'Handlee';
+            margin-bottom: var(--dl-space-space-twounits);
+            letter-spacing: 2px;
+          }
+          .hero-link {
+            color: var(--dl-color-gray-white);
+            display: none;
+            font-size: 35px;
+            transition: 0.3s;
+            padding-top: var(--dl-space-space-unit);
+            border-width: 0px;
+            padding-left: var(--dl-space-space-twounits);
+            padding-right: var(--dl-space-space-twounits);
+            padding-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
+            background-color: var(--dl-color-gray-black);
+          }
+          .hero-link:hover {
+            transform: scale(1.02);
+          }
+
+          @media (max-width: 1200px) {
+            .hero-link {
+              color: var(--dl-color-gray-white);
+              background-color: var(--dl-color-gray-black);
+            }
+          }
+          @media (max-width: 767px) {
+            .hero-hero {
+              max-width: 100%;
+              align-items: center;
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
+              justify-content: center;
+            }
+            .hero-root-class-name {
+              max-width: 100%;
+              align-self: center;
+            }
+          }
+          @media (max-width: 479px) {
+            .hero-hero {
+              align-items: center;
+              padding-top: var(--dl-space-space-twounits);
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-twounits);
+              justify-content: center;
+            }
+            .hero-text1 {
+              max-width: 100%;
+            }
+            .hero-text2 {
+              color: var(--dl-color-gray-white);
+              font-size: 1.5rem;
+              margin-bottom: var(--dl-space-space-threeunits);
+              letter-spacing: 2px;
+            }
+            .hero-link {
+              font-size: 24px;
+              text-align: center;
+            }
+          }
+        `}
+      </style>
+    </>
+  )
+}
+
+Hero.defaultProps = {
+  text: 'Palmer Peninsula, Yucatan Mexico',
+  heroButtonLink: '',
+  heading: 'Mexico Kosher Resort',
+  rootClassName: '',
+  heroButtonText: 'Schedule  Your Vacation',
+  text1: 'Palmer Peninsula, Yucatan Mexico',
+  imagesrc: '/text2-200h.png',
+  imagealt: 'image',
+  imagesrc1: 'ee494990-5da0-46c6-8c7e-b2075b7bd65a',
+  imagealt1: 'image',
+  imagesrc2: '/text1-200h.png',
+  imagealt2: 'image',
+  imagesrc3: '379b70d9-5a6c-4dbe-959a-5e143321ce63',
+  imagealt3: 'image',
+  imagesrc4: '/mayaroyalelogo-1000h.png',
+  imagealt4: 'image',
+  text2: 'בס"ד',
+}
+
+Hero.propTypes = {
+  text: PropTypes.string,
+  heroButtonLink: PropTypes.string,
+  heading: PropTypes.string,
+  rootClassName: PropTypes.string,
+  heroButtonText: PropTypes.string,
+  text1: PropTypes.string,
+  imagesrc: PropTypes.string,
+  imagealt: PropTypes.string,
+  imagesrc1: PropTypes.string,
+  imagealt1: PropTypes.string,
+  imagesrc2: PropTypes.string,
+  imagealt2: PropTypes.string,
+  imagesrc3: PropTypes.string,
+  imagealt3: PropTypes.string,
+  imagesrc4: PropTypes.string,
+  imagealt4: PropTypes.string,
+  text2: PropTypes.string,
+}
+
+export default Hero
