@@ -1283,6 +1283,11 @@ const Home = (props) => {
               padding: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-twounits);
             }
+            .home-container17 {
+              width: 100%;
+              align-self: flex-start;
+              justify-content: flex-start;
+            }
             .home-testimonial {
               align-items: center;
             }
