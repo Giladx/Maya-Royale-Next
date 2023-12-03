@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
@@ -456,12 +457,37 @@ const Home = (props) => {
                 <br></br>
               </span>
             </div>
+            <div className="home-container15">
+              <Link href="/">
+                <a className="home-link">
+                  <span>
+                    © 2023 All Rights Reserved To Maya Royale.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <br></br>
+                  <br></br>
+                </a>
+              </Link>
+              <a
+                href="https://011.ninja"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link1"
+              >
+                <span>Coded By 011.ninja</span>
+                <br></br>
+              </a>
+            </div>
           </div>
         </div>
         <div className="home-testimonial">
-          <div className="home-container15">
-            <div className="home-container16">
-              <div className="home-container17">
+          <div className="home-container16">
+            <div className="home-container17">
+              <div className="home-container18">
                 <TestimonialCard2
                   name="Joe A."
                   quote="It is an incredible place outside of technology but you still have the accessibility to the phone another concept and the beautiful view of the beach of 10 and the attention and cleanliness 10 with a rustic and pleasant style it is worth visiting very accessible I recommend Easter where the waters are most crystal clear and relaxed magnificent concept."
@@ -478,7 +504,7 @@ const Home = (props) => {
                 rootClassName="rootClassName2"
               ></TestimonialCard2>
             </div>
-            <div className="home-container18">
+            <div className="home-container19">
               <TestimonialCard4
                 name="Sarah D."
                 quote="I visited Sabancuy many years ago and just recently, the beaches there are absolutely wonderful, never seaweed, or dirt. You can walk into the water 100’ deep and it will reach your chest. The nature is amazing, the beautiful surrounding. Simply amazing"
@@ -815,6 +841,27 @@ const Home = (props) => {
             font-size: 34px;
             margin-top: var(--dl-space-space-threeunits);
           }
+          .home-container15 {
+            flex: 0 0 auto;
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: var(--dl-space-space-threeunits);
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-link {
+            color: var(--dl-color-gray-white);
+            font-size: 34px;
+            margin-top: var(--dl-space-space-twounits);
+            text-decoration: none;
+          }
+          .home-link1 {
+            color: var(--dl-color-gray-white);
+            font-size: 34px;
+            margin-top: var(--dl-space-space-halfunit);
+            text-decoration: none;
+          }
           .home-testimonial {
             width: 100%;
             display: none;
@@ -825,14 +872,14 @@ const Home = (props) => {
             background-position: center;
             background-attachment: fixed;
           }
-          .home-container15 {
+          .home-container16 {
             display: flex;
             padding: var(--dl-space-space-threeunits);
             max-width: var(--dl-size-size-maxwidth);
             align-items: stretch;
             justify-content: space-between;
           }
-          .home-container16 {
+          .home-container17 {
             flex: 2;
             height: auto;
             display: flex;
@@ -841,14 +888,14 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container17 {
+          .home-container18 {
             display: flex;
             align-items: flex-start;
             margin-bottom: var(--dl-space-space-twounits);
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container18 {
+          .home-container19 {
             flex: 1;
             display: flex;
             align-items: center;
@@ -897,10 +944,10 @@ const Home = (props) => {
             .home-container08 {
               width: 100%;
             }
-            .home-container15 {
+            .home-container16 {
               flex-direction: column;
             }
-            .home-container16 {
+            .home-container17 {
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
             }
@@ -940,7 +987,7 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-twounits);
               flex-direction: column;
             }
-            .home-container15 {
+            .home-container16 {
               max-width: 100%;
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
@@ -1055,14 +1102,14 @@ const Home = (props) => {
             .home-testimonial {
               align-items: center;
             }
-            .home-container15 {
+            .home-container16 {
               max-width: 100%;
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .home-container16 {
+            .home-container17 {
               align-items: center;
               justify-content: center;
             }
