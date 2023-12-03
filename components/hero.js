@@ -7,23 +7,6 @@ const Hero = (props) => {
     <>
       <div data-aos="fade" className={`hero-hero ${props.rootClassName} `}>
         <span className="hero-text">{props.text2}</span>
-        <div className="hero-container">
-          <img
-            src={props.imagesrc2}
-            alt={props.imagealt2}
-            className="hero-image"
-          />
-          <img
-            src={props.imagesrc}
-            alt={props.imagealt}
-            className="hero-image1"
-          />
-          <img
-            src={props.imagesrc4}
-            alt={props.imagealt4}
-            className="hero-image2"
-          />
-        </div>
         <h1 data-aos="fade-down" className="hero-text1">
           {props.heading}
         </h1>
@@ -39,6 +22,18 @@ const Hero = (props) => {
         >
           {props.heroButtonText}
         </a>
+        <div className="hero-container">
+          <img
+            src={props.imagesrc2}
+            alt={props.imagealt2}
+            className="hero-image"
+          />
+          <img
+            src={props.imagesrc}
+            alt={props.imagealt}
+            className="hero-image1"
+          />
+        </div>
       </div>
       <style jsx>
         {`
@@ -59,9 +54,44 @@ const Hero = (props) => {
             text-align: right;
             font-family: 'Arial Black';
           }
+          .hero-text1 {
+            color: var(--dl-color-gray-white);
+            width: 676px;
+            font-size: 5rem;
+            max-width: 550px;
+            align-self: center;
+            margin-top: var(--dl-space-space-twounits);
+            text-align: center;
+            margin-bottom: var(--dl-space-space-twounits);
+          }
+          .hero-text2 {
+            color: var(--dl-color-gray-white);
+            font-size: 1.5rem;
+            align-self: center;
+            font-family: 'Handlee';
+            margin-bottom: var(--dl-space-space-twounits);
+            letter-spacing: 2px;
+          }
+          .hero-link {
+            color: var(--dl-color-gray-white);
+            width: 434px;
+            font-size: 35px;
+            align-self: center;
+            transition: 0.3s;
+            padding-top: var(--dl-space-space-unit);
+            border-width: 0px;
+            padding-left: var(--dl-space-space-twounits);
+            padding-right: var(--dl-space-space-twounits);
+            padding-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
+            background-color: var(--dl-color-gray-black);
+          }
+          .hero-link:hover {
+            transform: scale(1.02);
+          }
           .hero-container {
             width: 100%;
-            height: 920px;
+            height: 800px;
             display: flex;
             position: relative;
             align-items: flex-end;
@@ -84,48 +114,9 @@ const Hero = (props) => {
             position: absolute;
             object-fit: cover;
           }
-          .hero-image2 {
-            right: 100px;
-            width: 200px;
-            bottom: 80px;
-            position: absolute;
-            object-fit: cover;
+          .hero-root-class-name {
+            min-height: auto;
           }
-          .hero-text1 {
-            color: var(--dl-color-gray-white);
-            width: 676px;
-            display: none;
-            font-size: 5rem;
-            max-width: 550px;
-            margin-top: var(--dl-space-space-twounits);
-            text-align: center;
-            margin-bottom: var(--dl-space-space-twounits);
-          }
-          .hero-text2 {
-            color: var(--dl-color-gray-white);
-            display: none;
-            font-size: 1.5rem;
-            font-family: 'Handlee';
-            margin-bottom: var(--dl-space-space-twounits);
-            letter-spacing: 2px;
-          }
-          .hero-link {
-            color: var(--dl-color-gray-white);
-            display: none;
-            font-size: 35px;
-            transition: 0.3s;
-            padding-top: var(--dl-space-space-unit);
-            border-width: 0px;
-            padding-left: var(--dl-space-space-twounits);
-            padding-right: var(--dl-space-space-twounits);
-            padding-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
-            background-color: var(--dl-color-gray-black);
-          }
-          .hero-link:hover {
-            transform: scale(1.02);
-          }
-
           @media (max-width: 1200px) {
             .hero-link {
               color: var(--dl-color-gray-white);
@@ -189,7 +180,7 @@ Hero.defaultProps = {
   imagealt2: 'image',
   imagesrc3: '379b70d9-5a6c-4dbe-959a-5e143321ce63',
   imagealt3: 'image',
-  imagesrc4: '/mayaroyalelogo-1000h.png',
+  imagesrc4: '5060ef02-7fd5-436a-945d-0b6f103126bc',
   imagealt4: 'image',
   text2: 'בס"ד',
 }

@@ -306,10 +306,11 @@ const Home = (props) => {
             rootClassName="rootClassName4"
           ></BlogPostCard4>
         </div>
+        <div className="home-container09"></div>
         <div className="home-testimonial">
-          <div className="home-container09">
-            <div className="home-container10">
-              <div className="home-container11">
+          <div className="home-container10">
+            <div className="home-container11">
+              <div className="home-container12">
                 <TestimonialCard2
                   name="Joe A."
                   quote="It is an incredible place outside of technology but you still have the accessibility to the phone another concept and the beautiful view of the beach of 10 and the attention and cleanliness 10 with a rustic and pleasant style it is worth visiting very accessible I recommend Easter where the waters are most crystal clear and relaxed magnificent concept."
@@ -326,7 +327,7 @@ const Home = (props) => {
                 rootClassName="rootClassName2"
               ></TestimonialCard2>
             </div>
-            <div className="home-container12">
+            <div className="home-container13">
               <TestimonialCard4
                 name="Sarah D."
                 quote="I visited Sabancuy many years ago and just recently, the beaches there are absolutely wonderful, never seaweed, or dirt. You can walk into the water 100’ deep and it will reach your chest. The nature is amazing, the beautiful surrounding. Simply amazing"
@@ -568,9 +569,18 @@ const Home = (props) => {
             align-items: center;
             justify-content: space-between;
           }
+          .home-container09 {
+            width: 100%;
+            border: 2px dashed rgba(120, 120, 120, 0.4);
+            height: 500px;
+            display: flex;
+            align-items: flex-start;
+            background-size: cover;
+            background-image: url('/4k%20front%20isometric-1500w.webp');
+          }
           .home-testimonial {
             width: 100%;
-            display: flex;
+            display: none;
             background-size: cover;
             justify-content: center;
             background-image: url('/2_16%20-%20foto-1500w.jpg');
@@ -578,14 +588,14 @@ const Home = (props) => {
             background-position: center;
             background-attachment: fixed;
           }
-          .home-container09 {
+          .home-container10 {
             display: flex;
             padding: var(--dl-space-space-threeunits);
             max-width: var(--dl-size-size-maxwidth);
             align-items: stretch;
             justify-content: space-between;
           }
-          .home-container10 {
+          .home-container11 {
             flex: 2;
             height: auto;
             display: flex;
@@ -594,14 +604,14 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container11 {
+          .home-container12 {
             display: flex;
             align-items: flex-start;
             margin-bottom: var(--dl-space-space-twounits);
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container12 {
+          .home-container13 {
             flex: 1;
             display: flex;
             align-items: center;
@@ -644,10 +654,10 @@ const Home = (props) => {
             .home-container08 {
               width: 100%;
             }
-            .home-container09 {
+            .home-container10 {
               flex-direction: column;
             }
-            .home-container10 {
+            .home-container11 {
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
             }
@@ -687,7 +697,7 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-twounits);
               flex-direction: column;
             }
-            .home-container09 {
+            .home-container10 {
               max-width: 100%;
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
@@ -763,14 +773,14 @@ const Home = (props) => {
             .home-testimonial {
               align-items: center;
             }
-            .home-container09 {
+            .home-container10 {
               max-width: 100%;
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .home-container10 {
+            .home-container11 {
               align-items: center;
               justify-content: center;
             }
