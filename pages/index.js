@@ -775,7 +775,6 @@ const Home = (props) => {
             display: flex;
             padding: var(--dl-space-space-unit);
             align-items: center;
-            justify-content: space-between;
           }
           .home-container09 {
             width: 100%;

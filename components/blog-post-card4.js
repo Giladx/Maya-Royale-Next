@@ -49,12 +49,12 @@ const BlogPostCard4 = (props) => {
         {`
           .blog-post-card4-blog-post-card {
             width: 100%;
+            margin: var(--dl-space-space-twounits);
             display: flex;
             max-width: var(--dl-size-size-maxwidth);
             box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
             transition: 0.3s;
             border-radius: 10px;
-            margin-bottom: var(--dl-space-space-twounits);
             flex-direction: column;
             justify-content: space-between;
           }
