@@ -15,13 +15,13 @@ const Hero = (props) => {
         </span>
         <div className="hero-container">
           <img
-            alt={props.imagealt2}
             src={props.imagesrc2}
+            alt={props.imagealt2}
             className="hero-image"
           />
           <img
-            alt={props.imagealt}
             src={props.imagesrc}
+            alt={props.imagealt}
             className="hero-image1"
           />
         </div>
@@ -153,43 +153,43 @@ const Hero = (props) => {
 }
 
 Hero.defaultProps = {
+  text: 'Palmer Peninsula, Yucatan Mexico',
+  heroButtonLink: '',
+  heading: 'Mexico Kosher Resort',
+  rootClassName: '',
+  heroButtonText: 'Schedule  Your Vacation',
+  text1: 'Palmer Peninsula, Yucatan Mexico',
   imagesrc: '/text2-200h.png',
+  imagealt: 'image',
+  imagesrc1: 'ee494990-5da0-46c6-8c7e-b2075b7bd65a',
   imagealt1: 'image',
   imagesrc2: '/text1-200h.png',
   imagealt2: 'image',
-  text: 'Palmer Peninsula, Yucatan Mexico',
-  text1: 'Palmer Peninsula, Yucatan Mexico',
-  heroButtonLink: '',
-  text2: 'בס"ד',
-  imagealt: 'image',
-  imagealt4: 'image',
-  imagesrc4: '5060ef02-7fd5-436a-945d-0b6f103126bc',
-  imagesrc1: 'ee494990-5da0-46c6-8c7e-b2075b7bd65a',
   imagesrc3: '379b70d9-5a6c-4dbe-959a-5e143321ce63',
-  heading: 'Mexico Kosher Resort',
-  rootClassName: '',
   imagealt3: 'image',
-  heroButtonText: 'Schedule  Your Vacation',
+  imagesrc4: '5060ef02-7fd5-436a-945d-0b6f103126bc',
+  imagealt4: 'image',
+  text2: 'בס"ד',
 }
 
 Hero.propTypes = {
+  text: PropTypes.string,
+  heroButtonLink: PropTypes.string,
+  heading: PropTypes.string,
+  rootClassName: PropTypes.string,
+  heroButtonText: PropTypes.string,
+  text1: PropTypes.string,
   imagesrc: PropTypes.string,
+  imagealt: PropTypes.string,
+  imagesrc1: PropTypes.string,
   imagealt1: PropTypes.string,
   imagesrc2: PropTypes.string,
   imagealt2: PropTypes.string,
-  text: PropTypes.string,
-  text1: PropTypes.string,
-  heroButtonLink: PropTypes.string,
-  text2: PropTypes.string,
-  imagealt: PropTypes.string,
-  imagealt4: PropTypes.string,
-  imagesrc4: PropTypes.string,
-  imagesrc1: PropTypes.string,
   imagesrc3: PropTypes.string,
-  heading: PropTypes.string,
-  rootClassName: PropTypes.string,
   imagealt3: PropTypes.string,
-  heroButtonText: PropTypes.string,
+  imagesrc4: PropTypes.string,
+  imagealt4: PropTypes.string,
+  text2: PropTypes.string,
 }
 
 export default Hero

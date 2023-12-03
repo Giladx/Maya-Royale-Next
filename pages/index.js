@@ -58,12 +58,6 @@ const Home = (props) => {
             <br></br>
           </h1>
           <div data-aos="fade-right" className="home-separator"></div>
-          <button
-            data-aos="fade-up"
-            className="home-button button gradient-box"
-          >
-            Schedule Your Vacation
-          </button>
           <div className="home-container01">
             <div className="home-container02">
               <div data-aos="fade-right" className="home-feature-card">
@@ -253,38 +247,43 @@ const Home = (props) => {
                 </span>
               </div>
             </div>
-            <img
-              alt="image"
-              src="/maarten-van-den-heuvel-siuwr3ucir0-unsplash-500w.jpg"
-              data-aos="fade"
-              className="home-image gradient-box"
-            />
+            <div className="home-container03">
+              <button data-aos="fade-up" className="home-button button">
+                Schedule Your Vacation
+              </button>
+              <img
+                alt="image"
+                src="/maarten-van-den-heuvel-siuwr3ucir0-unsplash-500w.jpg"
+                data-aos="fade"
+                className="home-image gradient-box"
+              />
+            </div>
           </div>
         </div>
         <div className="home-gallery">
-          <div className="home-container03">
-            <div className="home-container04">
-              <div className="home-container05">
+          <div className="home-container04">
+            <div className="home-container05">
+              <div className="home-container06">
                 <GalleryCard2
                   imageSrc="/1-1500h.webp"
                   rootClassName="rootClassName2"
                 ></GalleryCard2>
               </div>
-              <div className="home-container06">
+              <div className="home-container07">
                 <GalleryCard2
                   imageSrc="/suite-1500w.webp"
                   rootClassName="rootClassName3"
                 ></GalleryCard2>
               </div>
             </div>
-            <div className="home-container07">
+            <div className="home-container08">
               <GalleryCard2
                 imageSrc="/10_19%20-%20foto1-1500h.jpg"
                 rootClassName="rootClassName"
               ></GalleryCard2>
             </div>
           </div>
-          <div className="home-container08">
+          <div className="home-container09">
             <GalleryCard2
               imageSrc="/12-1500h.webp"
               rootClassName="rootClassName4"
@@ -315,18 +314,18 @@ const Home = (props) => {
             rootClassName="rootClassName4"
           ></BlogPostCard4>
         </div>
-        <div className="home-container09">
-          <div className="home-container10">
+        <div className="home-container10">
+          <div className="home-container11">
             <img
+              src="/4k%20front%20isometric-1500w.webp"
               alt="image"
-              src="/4k%20front%20isometric-800w.webp"
               className="home-image1 gradient-box"
             />
           </div>
-          <div className="home-container11">
+          <div className="home-container12">
             <span className="home-text50">Contact Us</span>
-            <div className="home-container12">
-              <div className="home-container13">
+            <div className="home-container13">
+              <div className="home-container14">
                 <Script
                   html={`
     <iframe
@@ -428,7 +427,7 @@ const Home = (props) => {
                 ></Script>
               </div>
             </div>
-            <div className="home-container14">
+            <div className="home-container15">
               <span className="home-text51">
                 <span>John Duchkar</span>
                 <br></br>
@@ -457,7 +456,7 @@ const Home = (props) => {
                 <br></br>
               </span>
             </div>
-            <div className="home-container15">
+            <div className="home-container16">
               <Link href="/">
                 <a className="home-link">
                   <span>
@@ -485,9 +484,9 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-testimonial">
-          <div className="home-container16">
-            <div className="home-container17">
-              <div className="home-container18">
+          <div className="home-container17">
+            <div className="home-container18">
+              <div className="home-container19">
                 <TestimonialCard2
                   name="Joe A."
                   quote="It is an incredible place outside of technology but you still have the accessibility to the phone another concept and the beautiful view of the beach of 10 and the attention and cleanliness 10 with a rustic and pleasant style it is worth visiting very accessible I recommend Easter where the waters are most crystal clear and relaxed magnificent concept."
@@ -504,7 +503,7 @@ const Home = (props) => {
                 rootClassName="rootClassName2"
               ></TestimonialCard2>
             </div>
-            <div className="home-container19">
+            <div className="home-container20">
               <TestimonialCard4
                 name="Sarah D."
                 quote="I visited Sabancuy many years ago and just recently, the beaches there are absolutely wonderful, never seaweed, or dirt. You can walk into the water 100’ deep and it will reach your chest. The nature is amazing, the beautiful surrounding. Simply amazing"
@@ -544,23 +543,6 @@ const Home = (props) => {
             width: 100px;
             height: 2px;
             background-color: var(--dl-color-gray-500);
-          }
-          .home-button {
-            color: var(--dl-color-gray-white);
-            width: 434px;
-            font-size: 35px;
-            align-self: flex-end;
-            transition: 0.3s;
-            padding-top: var(--dl-space-space-unit);
-            border-width: 0px;
-            padding-left: var(--dl-space-space-twounits);
-            padding-right: var(--dl-space-space-twounits);
-            padding-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
-            background-color: var(--dl-color-gray-black);
-          }
-          .home-button:hover {
-            transform: scale(1.02);
           }
           .home-container01 {
             flex: 0 0 auto;
@@ -699,6 +681,33 @@ const Home = (props) => {
             color: var(--dl-color-gray-white);
             line-height: 1.5;
           }
+          .home-container03 {
+            flex: 0 0 auto;
+            width: auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-button {
+            color: var(--dl-color-gray-white);
+            width: 434px;
+            font-size: 35px;
+            align-self: flex-end;
+            transition: 0.3s;
+            padding-top: var(--dl-space-space-unit);
+            border-color: var(--dl-color-gray-white);
+            border-width: 1px;
+            padding-left: var(--dl-space-space-twounits);
+            border-radius: 10px;
+            margin-bottom: var(--dl-space-space-fourunits);
+            padding-right: var(--dl-space-space-twounits);
+            padding-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
+            background-color: var(--dl-color-gray-black);
+          }
+          .home-button:hover {
+            transform: scale(1.02);
+          }
           .home-image {
             width: 450px;
             height: 450px;
@@ -720,29 +729,20 @@ const Home = (props) => {
             padding-right: var(--dl-space-space-threeunits);
             padding-bottom: var(--dl-space-space-twounits);
           }
-          .home-container03 {
+          .home-container04 {
             flex: 3;
             height: 100%;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-container04 {
+          .home-container05 {
             flex: 1;
             width: 100%;
             height: 100%;
             display: flex;
             align-items: flex-start;
             flex-direction: row;
-          }
-          .home-container05 {
-            flex: 1;
-            height: 100%;
-            display: flex;
-            padding: var(--dl-space-space-halfunit);
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
           }
           .home-container06 {
             flex: 1;
@@ -755,13 +755,22 @@ const Home = (props) => {
           }
           .home-container07 {
             flex: 1;
+            height: 100%;
+            display: flex;
+            padding: var(--dl-space-space-halfunit);
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .home-container08 {
+            flex: 1;
             width: 100%;
             display: flex;
             padding: var(--dl-space-space-halfunit);
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-container08 {
+          .home-container09 {
             flex: 2;
             height: 100%;
             display: flex;
@@ -776,13 +785,13 @@ const Home = (props) => {
             padding: var(--dl-space-space-unit);
             align-items: center;
           }
-          .home-container09 {
+          .home-container10 {
             width: 100%;
             height: auto;
             display: flex;
             padding: var(--dl-space-space-threeunits);
           }
-          .home-container10 {
+          .home-container11 {
             flex: 0 0 auto;
             width: 50%;
             display: flex;
@@ -790,16 +799,14 @@ const Home = (props) => {
           }
           .home-image1 {
             width: 100%;
-            padding: var(--dl-space-space-halfunit);
             object-fit: cover;
             border-radius: 10px;
           }
-          .home-container11 {
+          .home-container12 {
             flex: 0 0 auto;
             width: 50%;
             height: auto;
             display: flex;
-            padding: var(--dl-space-space-twounits);
             flex-direction: column;
           }
           .home-text50 {
@@ -808,13 +815,13 @@ const Home = (props) => {
             padding-left: var(--dl-space-space-threeunits);
             text-transform: uppercase;
           }
-          .home-container12 {
+          .home-container13 {
             width: 100%;
           }
-          .home-container13 {
+          .home-container14 {
             display: contents;
           }
-          .home-container14 {
+          .home-container15 {
             flex: 0 0 auto;
             width: 100%;
             height: auto;
@@ -841,25 +848,26 @@ const Home = (props) => {
             font-size: 34px;
             margin-top: var(--dl-space-space-threeunits);
           }
-          .home-container15 {
-            flex: 0 0 auto;
+          .home-container16 {
             width: 100%;
-            height: auto;
+            height: 313px;
             display: flex;
-            padding: var(--dl-space-space-threeunits);
             align-items: flex-start;
+            padding-top: var(--dl-space-space-threeunits);
+            padding-left: var(--dl-space-space-threeunits);
+            padding-right: var(--dl-space-space-threeunits);
             flex-direction: column;
           }
           .home-link {
             color: var(--dl-color-gray-white);
             font-size: 34px;
-            margin-top: var(--dl-space-space-twounits);
+            margin-top: var(--dl-space-space-sixunits);
             text-decoration: none;
           }
           .home-link1 {
             color: var(--dl-color-gray-white);
             font-size: 34px;
-            margin-top: var(--dl-space-space-halfunit);
+            margin-top: var(--dl-space-space-threeunits);
             text-decoration: none;
           }
           .home-testimonial {
@@ -872,14 +880,14 @@ const Home = (props) => {
             background-position: center;
             background-attachment: fixed;
           }
-          .home-container16 {
+          .home-container17 {
             display: flex;
             padding: var(--dl-space-space-threeunits);
             max-width: var(--dl-size-size-maxwidth);
             align-items: stretch;
             justify-content: space-between;
           }
-          .home-container17 {
+          .home-container18 {
             flex: 2;
             height: auto;
             display: flex;
@@ -888,14 +896,14 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container18 {
+          .home-container19 {
             display: flex;
             align-items: flex-start;
             margin-bottom: var(--dl-space-space-twounits);
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container19 {
+          .home-container20 {
             flex: 1;
             display: flex;
             align-items: center;
@@ -936,18 +944,19 @@ const Home = (props) => {
               max-width: 100%;
             }
             .home-image {
-              width: 300px;
-              height: 300px;
+              width: 448px;
+              height: 448px;
               margin-top: var(--dl-space-space-twounits);
               margin-left: 0px;
+              margin-bottom: 0px;
             }
-            .home-container08 {
+            .home-container09 {
               width: 100%;
             }
-            .home-container16 {
+            .home-container17 {
               flex-direction: column;
             }
-            .home-container17 {
+            .home-container18 {
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
             }
@@ -961,13 +970,13 @@ const Home = (props) => {
             .home-text {
               text-align: center;
             }
-            .home-button {
-              align-self: center;
-            }
             .home-container01 {
               align-items: center;
               flex-direction: column;
               justify-content: center;
+            }
+            .home-button {
+              align-self: center;
             }
             .home-gallery {
               align-items: center;
@@ -975,13 +984,13 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-twounits);
               flex-direction: row;
             }
-            .home-container04 {
+            .home-container05 {
               flex-direction: column;
             }
-            .home-container05 {
+            .home-container06 {
               width: 100%;
             }
-            .home-container06 {
+            .home-container07 {
               width: 100%;
             }
             .home-blog {
@@ -990,7 +999,7 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-twounits);
               flex-direction: column;
             }
-            .home-container16 {
+            .home-container17 {
               max-width: 100%;
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
@@ -1008,10 +1017,6 @@ const Home = (props) => {
             .home-text {
               color: var(--dl-color-gray-white);
               font-size: 3rem;
-            }
-            .home-button {
-              font-size: 24px;
-              text-align: center;
             }
             .home-container01 {
               align-items: center;
@@ -1076,19 +1081,24 @@ const Home = (props) => {
             .home-text40 {
               color: var(--dl-color-gray-white);
             }
+            .home-button {
+              font-size: 24px;
+              text-align: center;
+            }
             .home-image {
-              width: 250px;
-              height: 250px;
+              width: 350px;
+              height: 350px;
+              align-self: center;
             }
             .home-gallery {
               padding: var(--dl-space-space-unit);
               flex-direction: column;
               background-color: var(--dl-color-gray-black);
             }
-            .home-container03 {
+            .home-container04 {
               width: 100%;
             }
-            .home-container08 {
+            .home-container09 {
               height: auto;
             }
             .home-blog {
@@ -1099,20 +1109,30 @@ const Home = (props) => {
               padding-bottom: var(--dl-space-space-twounits);
               background-color: var(--dl-color-gray-black);
             }
-            .home-container09 {
+            .home-container10 {
+              flex-direction: column;
               background-color: var(--dl-color-gray-black);
+            }
+            .home-container11 {
+              width: 100%;
+            }
+            .home-container12 {
+              width: 100%;
+            }
+            .home-text50 {
+              font-size: 38px;
             }
             .home-testimonial {
               align-items: center;
             }
-            .home-container16 {
+            .home-container17 {
               max-width: 100%;
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .home-container17 {
+            .home-container18 {
               align-items: center;
               justify-content: center;
             }
