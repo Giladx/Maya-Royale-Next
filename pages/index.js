@@ -248,9 +248,15 @@ const Home = (props) => {
               </div>
             </div>
             <div className="home-container03">
-              <button data-aos="fade-up" className="home-button button">
+              <a
+                href="https://booking.mayaroyale.com/"
+                data-aos="fade-up"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link button"
+              >
                 Schedule Your Vacation
-              </button>
+              </a>
               <img
                 alt="image"
                 src="/maarten-van-den-heuvel-siuwr3ucir0-unsplash-600w.jpg"
@@ -460,7 +466,7 @@ const Home = (props) => {
             </div>
             <div className="home-container16">
               <Link href="/">
-                <a className="home-link">
+                <a className="home-link1">
                   <span>
                     © 2023 All Rights Reserved To Maya Royale.
                     <span
@@ -477,7 +483,7 @@ const Home = (props) => {
                 href="https://011.ninja"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link1"
+                className="home-link2"
               >
                 <span> ® Coded By 011.ninja</span>
                 <br></br>
@@ -690,7 +696,7 @@ const Home = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-button {
+          .home-link {
             color: var(--dl-color-gray-white);
             width: 434px;
             font-size: 35px;
@@ -707,7 +713,7 @@ const Home = (props) => {
             text-decoration: none;
             background-color: var(--dl-color-gray-black);
           }
-          .home-button:hover {
+          .home-link:hover {
             transform: scale(1.02);
           }
           .home-image {
@@ -864,13 +870,13 @@ const Home = (props) => {
             padding-right: var(--dl-space-space-threeunits);
             flex-direction: column;
           }
-          .home-link {
+          .home-link1 {
             color: var(--dl-color-gray-white);
             font-size: 34px;
             margin-top: var(--dl-space-space-sixunits);
             text-decoration: none;
           }
-          .home-link1 {
+          .home-link2 {
             color: var(--dl-color-gray-white);
             font-size: 34px;
             margin-top: var(--dl-space-space-threeunits);
@@ -924,7 +930,7 @@ const Home = (props) => {
             }
           }
           @media (max-width: 1200px) {
-            .home-button {
+            .home-link {
               color: var(--dl-color-gray-white);
               background-color: var(--dl-color-gray-black);
             }
@@ -954,10 +960,11 @@ const Home = (props) => {
               align-items: center;
               justify-content: center;
             }
-            .home-button {
+            .home-link {
               width: auto;
               align-self: center;
               margin-top: var(--dl-space-space-fourunits);
+              margin-bottom: var(--dl-space-space-twounits);
             }
             .home-image {
               width: 550px;
@@ -1002,7 +1009,7 @@ const Home = (props) => {
               flex-direction: column;
               justify-content: center;
             }
-            .home-button {
+            .home-link {
               align-self: center;
             }
             .home-gallery {
@@ -1118,9 +1125,11 @@ const Home = (props) => {
             .home-text40 {
               color: var(--dl-color-gray-white);
             }
-            .home-button {
+            .home-link {
               font-size: 24px;
+              margin-top: var(--dl-space-space-twounits);
               text-align: center;
+              margin-bottom: var(--dl-space-space-twounits);
             }
             .home-image {
               width: 350px;
