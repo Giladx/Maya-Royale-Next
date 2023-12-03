@@ -48,7 +48,7 @@ const GalleryCard2 = (props) => {
           .gallery-card2-container {
             width: 100%;
             height: 100%;
-            display: flex;
+            display: none;
             opacity: 0;
             z-index: 1;
             transition: 0.3s;

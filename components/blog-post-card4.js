@@ -67,8 +67,8 @@ const BlogPostCard4 = (props) => {
             max-height: 50rem;
             object-fit: cover;
             border-radius: 10px;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
           }
           .blog-post-card4-container {
             width: 100%;

@@ -416,6 +416,7 @@ const Home = (props) => {
           }
           .home-text05 {
             color: var(--dl-color-gray-white);
+            line-height: 1.5;
           }
           .home-feature-card1 {
             width: 100%;
@@ -446,6 +447,7 @@ const Home = (props) => {
           }
           .home-text20 {
             color: var(--dl-color-gray-white);
+            line-height: 1.5;
           }
           .home-feature-card2 {
             width: 100%;
@@ -476,6 +478,7 @@ const Home = (props) => {
           }
           .home-text29 {
             color: var(--dl-color-gray-white);
+            line-height: 1.5;
           }
           .home-feature-card3 {
             width: 100%;
@@ -506,6 +509,7 @@ const Home = (props) => {
           }
           .home-text40 {
             color: var(--dl-color-gray-white);
+            line-height: 1.5;
           }
           .home-image {
             width: 450px;
@@ -581,7 +585,7 @@ const Home = (props) => {
           .home-blog {
             width: 100%;
             display: flex;
-            padding: var(--dl-space-space-threeunits);
+            padding: var(--dl-space-space-unit);
             align-items: center;
             justify-content: space-between;
           }
@@ -597,6 +601,7 @@ const Home = (props) => {
             width: 60%;
             align-self: center;
             object-fit: cover;
+            border-radius: 10px;
           }
           .home-testimonial {
             width: 100%;
