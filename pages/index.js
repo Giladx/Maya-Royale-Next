@@ -805,6 +805,7 @@ const Home = (props) => {
           .home-text50 {
             color: var(--dl-color-gray-white);
             font-size: 48px;
+            padding-left: var(--dl-space-space-threeunits);
             text-transform: uppercase;
           }
           .home-container12 {
@@ -959,6 +960,9 @@ const Home = (props) => {
             }
             .home-text {
               text-align: center;
+            }
+            .home-button {
+              align-self: center;
             }
             .home-container01 {
               align-items: center;
