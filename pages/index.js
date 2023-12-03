@@ -572,11 +572,11 @@ const Home = (props) => {
           .home-container09 {
             width: 100%;
             border: 2px dashed rgba(120, 120, 120, 0.4);
-            height: 500px;
+            height: 3280px;
             display: flex;
             align-items: flex-start;
             background-size: cover;
-            background-image: url('/4k%20front%20isometric-1500w.webp');
+            background-image: url('/4k%20front%20isometric-3300h.webp');
           }
           .home-testimonial {
             width: 100%;
