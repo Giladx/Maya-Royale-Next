@@ -306,7 +306,13 @@ const Home = (props) => {
             rootClassName="rootClassName4"
           ></BlogPostCard4>
         </div>
-        <div className="home-container09"></div>
+        <div className="home-container09">
+          <img
+            src="/4k%20front%20isometric-900w.webp"
+            alt="image"
+            className="home-image1"
+          />
+        </div>
         <div className="home-testimonial">
           <div className="home-container10">
             <div className="home-container11">
@@ -571,12 +577,16 @@ const Home = (props) => {
           }
           .home-container09 {
             width: 100%;
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            height: 3280px;
+            height: auto;
             display: flex;
-            align-items: flex-start;
-            background-size: cover;
-            background-image: url('/4k%20front%20isometric-3300h.webp');
+            padding: var(--dl-space-space-threeunits);
+            align-items: center;
+            justify-content: center;
+          }
+          .home-image1 {
+            width: 60%;
+            align-self: center;
+            object-fit: cover;
           }
           .home-testimonial {
             width: 100%;
