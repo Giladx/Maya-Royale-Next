@@ -438,15 +438,15 @@ const Home = (props) => {
                 <span>John Duchkar</span>
                 <br></br>
               </span>
-              <span className="home-text54">
+              <a href="tel:529991072593" className="home-link1">
                 <span>Tel : 52.999.107.2593</span>
                 <br></br>
-              </span>
-              <span className="home-text57">
+              </a>
+              <a href="tel:5043553106" className="home-link2">
                 <span>US : 504.355.3106</span>
                 <br></br>
-              </span>
-              <span className="home-text60">
+              </a>
+              <span className="home-text58">
                 <span>Habla Espanol</span>
                 <br></br>
                 <span>
@@ -459,23 +459,32 @@ const Home = (props) => {
                 </span>
                 <br></br>
               </span>
-              <span className="home-text65">
+              <a href="tel:529241148284" className="home-link3">
                 <span>Tel : 52.924.114.8284</span>
                 <br></br>
-              </span>
+              </a>
             </div>
             <div className="home-container16">
               <Link href="/">
-                <a className="home-link1">
+                <a className="home-link4">
                   <span>
-                    © 2023 All Rights Reserved To Maya Royale.
+                    © 2023 All Rights Reserved To
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
                       }}
                     />
                   </span>
-                  <br></br>
+                  <span className="home-text66">Maya Royale</span>
+                  <span className="home-text67">
+                    .
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <br className="home-text68"></br>
                   <br></br>
                 </a>
               </Link>
@@ -483,18 +492,36 @@ const Home = (props) => {
                 href="https://011.ninja"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link2"
+                className="home-link5"
               >
-                <span> ® Coded By 011.ninja</span>
-                <br></br>
+                <div className="home-container17">
+                  <span className="home-text70">
+                    <span>
+                      {' '}
+                      ® Coded By
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <span className="home-text72">011.ninja</span>
+                    <br></br>
+                  </span>
+                  <img
+                    src="/ninjalogo.svg"
+                    alt="image"
+                    className="home-image2"
+                  />
+                </div>
               </a>
             </div>
           </div>
         </div>
         <div className="home-testimonial">
-          <div className="home-container17">
-            <div className="home-container18">
-              <div className="home-container19">
+          <div className="home-container18">
+            <div className="home-container19">
+              <div className="home-container20">
                 <TestimonialCard2
                   name="Joe A."
                   quote="It is an incredible place outside of technology but you still have the accessibility to the phone another concept and the beautiful view of the beach of 10 and the attention and cleanliness 10 with a rustic and pleasant style it is worth visiting very accessible I recommend Easter where the waters are most crystal clear and relaxed magnificent concept."
@@ -511,7 +538,7 @@ const Home = (props) => {
                 rootClassName="rootClassName2"
               ></TestimonialCard2>
             </div>
-            <div className="home-container20">
+            <div className="home-container21">
               <TestimonialCard4
                 name="Sarah D."
                 quote="I visited Sabancuy many years ago and just recently, the beaches there are absolutely wonderful, never seaweed, or dirt. You can walk into the water 100’ deep and it will reach your chest. The nature is amazing, the beautiful surrounding. Simply amazing"
@@ -699,6 +726,7 @@ const Home = (props) => {
           .home-link {
             color: var(--dl-color-gray-white);
             width: 434px;
+            cursor: pointer;
             font-size: 35px;
             align-self: flex-end;
             transition: 0.3s;
@@ -843,22 +871,28 @@ const Home = (props) => {
             font-size: 34px;
             margin-top: var(--dl-space-space-threeunits);
           }
-          .home-text54 {
+          .home-link1 {
             color: var(--dl-color-gray-white);
+            cursor: pointer;
             font-size: 34px;
+            text-decoration: none;
           }
-          .home-text57 {
+          .home-link2 {
             color: var(--dl-color-gray-white);
+            cursor: pointer;
             font-size: 34px;
+            text-decoration: none;
           }
-          .home-text60 {
+          .home-text58 {
             color: var(--dl-color-gray-white);
             font-size: 34px;
             margin-top: var(--dl-space-space-threeunits);
           }
-          .home-text65 {
+          .home-link3 {
             color: var(--dl-color-gray-white);
+            cursor: pointer;
             font-size: 34px;
+            text-decoration: none;
           }
           .home-container16 {
             width: 100%;
@@ -870,17 +904,48 @@ const Home = (props) => {
             padding-right: var(--dl-space-space-threeunits);
             flex-direction: column;
           }
-          .home-link1 {
+          .home-link4 {
             color: var(--dl-color-gray-white);
-            font-size: 34px;
-            margin-top: var(--dl-space-space-sixunits);
+            cursor: pointer;
+            font-size: 24px;
+            margin-top: var(--dl-space-space-fiveunits);
+            margin-bottom: var(--dl-space-space-fiveunits);
             text-decoration: none;
           }
-          .home-link2 {
-            color: var(--dl-color-gray-white);
-            font-size: 34px;
-            margin-top: var(--dl-space-space-threeunits);
+          .home-text66 {
+            font-weight: 700;
+          }
+          .home-link5 {
+            display: contents;
+          }
+          .home-container17 {
+            flex: 0 0 auto;
+            width: auto;
+            cursor: pointer;
+            display: flex;
+            align-self: flex-start;
+            align-items: flex-end;
+            flex-direction: row;
+            justify-content: center;
             text-decoration: none;
+          }
+          .home-text70 {
+            color: var(--dl-color-gray-white);
+            cursor: pointer;
+            height: auto;
+            font-size: 34px;
+            align-self: center;
+            font-family: 'Khand';
+          }
+          .home-text72 {
+            font-weight: 700;
+          }
+          .home-image2 {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            margin-left: var(--dl-space-space-twounits);
+            margin-right: var(--dl-space-space-twounits);
           }
           .home-testimonial {
             width: 100%;
@@ -892,14 +957,14 @@ const Home = (props) => {
             background-position: center;
             background-attachment: fixed;
           }
-          .home-container17 {
+          .home-container18 {
             display: flex;
             padding: var(--dl-space-space-threeunits);
             max-width: var(--dl-size-size-maxwidth);
             align-items: stretch;
             justify-content: space-between;
           }
-          .home-container18 {
+          .home-container19 {
             flex: 2;
             height: auto;
             display: flex;
@@ -908,14 +973,14 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container19 {
+          .home-container20 {
             display: flex;
             align-items: flex-start;
             margin-bottom: var(--dl-space-space-twounits);
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container20 {
+          .home-container21 {
             flex: 1;
             display: flex;
             align-items: center;
@@ -933,6 +998,10 @@ const Home = (props) => {
             .home-link {
               color: var(--dl-color-gray-white);
               background-color: var(--dl-color-gray-black);
+            }
+            .home-link4 {
+              margin-top: var(--dl-space-space-twounits);
+              margin-bottom: var(--dl-space-space-twounits);
             }
           }
           @media (max-width: 991px) {
@@ -987,10 +1056,13 @@ const Home = (props) => {
             .home-container12 {
               width: 100%;
             }
-            .home-container17 {
-              flex-direction: column;
+            .home-text70 {
+              align-self: center;
             }
             .home-container18 {
+              flex-direction: column;
+            }
+            .home-container19 {
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
             }
@@ -1033,17 +1105,48 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-twounits);
               flex-direction: column;
             }
-            .home-text60 {
-              color: var(--dl-color-gray-white);
-            }
-            .home-text65 {
+            .home-link1 {
               color: var(--dl-color-gray-white);
               font-size: 34px;
+              text-decoration: none;
+            }
+            .home-link2 {
+              color: var(--dl-color-gray-white);
+              font-size: 34px;
+            }
+            .home-text58 {
+              color: var(--dl-color-gray-white);
+            }
+            .home-link3 {
+              color: var(--dl-color-gray-white);
             }
             .home-container16 {
               padding: var(--dl-space-space-twounits);
             }
-            .home-container17 {
+            .home-link4 {
+              color: var(--dl-color-gray-white);
+              font-size: 24px;
+              text-decoration: none;
+            }
+            .home-text66 {
+              font-weight: 700;
+            }
+            .home-text67 {
+              font-weight: 700;
+            }
+            .home-text68 {
+              font-weight: 700;
+            }
+            .home-text70 {
+              color: var(--dl-color-gray-white);
+              font-size: 34px;
+              font-family: Khand;
+              text-decoration: none;
+            }
+            .home-text72 {
+              font-weight: 700;
+            }
+            .home-container18 {
               max-width: 100%;
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
@@ -1172,24 +1275,25 @@ const Home = (props) => {
             .home-container15 {
               padding: var(--dl-space-space-unit);
             }
-            .home-text60 {
+            .home-text58 {
               color: var(--dl-color-gray-white);
               font-size: 34px;
             }
             .home-container16 {
               padding: var(--dl-space-space-unit);
+              margin-bottom: var(--dl-space-space-twounits);
             }
             .home-testimonial {
               align-items: center;
             }
-            .home-container17 {
+            .home-container18 {
               max-width: 100%;
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .home-container18 {
+            .home-container19 {
               align-items: center;
               justify-content: center;
             }
