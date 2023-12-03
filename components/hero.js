@@ -102,7 +102,7 @@ const Hero = (props) => {
             left: 40px;
             width: 1000px;
             bottom: 80px;
-            height: 67px;
+            height: auto;
             position: absolute;
             object-fit: cover;
           }
@@ -121,6 +121,19 @@ const Hero = (props) => {
             .hero-link {
               color: var(--dl-color-gray-white);
               background-color: var(--dl-color-gray-black);
+            }
+            .hero-image {
+              height: auto;
+            }
+          }
+          @media (max-width: 991px) {
+            .hero-image {
+              width: 600px;
+            }
+            .hero-image1 {
+              left: 515px;
+              width: 200px;
+              bottom: 50px;
             }
           }
           @media (max-width: 767px) {
@@ -146,6 +159,7 @@ const Hero = (props) => {
               justify-content: center;
             }
             .hero-text1 {
+              font-size: 5rem;
               max-width: 100%;
             }
             .hero-text2 {
@@ -157,6 +171,13 @@ const Hero = (props) => {
             .hero-link {
               font-size: 24px;
               text-align: center;
+            }
+            .hero-image {
+              width: 300px;
+            }
+            .hero-image1 {
+              left: 215px;
+              width: 150px;
             }
           }
         `}

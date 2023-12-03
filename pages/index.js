@@ -355,6 +355,7 @@ const Home = (props) => {
             min-height: 100vh;
             align-items: center;
             flex-direction: column;
+            background-color: var(--dl-color-gray-black);
           }
           .home-features {
             width: 100%;
@@ -364,6 +365,7 @@ const Home = (props) => {
             flex-direction: column;
           }
           .home-text {
+            color: var(--dl-color-gray-white);
             font-size: 3rem;
             margin-bottom: var(--dl-space-space-twounits);
           }
@@ -402,16 +404,18 @@ const Home = (props) => {
             margin-bottom: var(--dl-space-space-unit);
           }
           .home-icon02 {
+            fill: var(--dl-color-gray-white);
             width: 2em;
             height: 2em;
             margin-bottom: var(--dl-space-space-halfunit);
           }
           .home-text04 {
+            color: var(--dl-color-gray-white);
             font-weight: 600;
             margin-bottom: var(--dl-space-space-unit);
           }
           .home-text05 {
-            color: var(--dl-color-gray-500);
+            color: var(--dl-color-gray-white);
           }
           .home-feature-card1 {
             width: 100%;
@@ -430,16 +434,18 @@ const Home = (props) => {
             margin-bottom: var(--dl-space-space-unit);
           }
           .home-icon06 {
+            fill: var(--dl-color-gray-white);
             width: 2em;
             height: 2em;
             margin-bottom: var(--dl-space-space-halfunit);
           }
           .home-text19 {
+            color: var(--dl-color-gray-white);
             font-weight: 600;
             margin-bottom: var(--dl-space-space-unit);
           }
           .home-text20 {
-            color: var(--dl-color-gray-500);
+            color: var(--dl-color-gray-white);
           }
           .home-feature-card2 {
             width: 100%;
@@ -458,16 +464,18 @@ const Home = (props) => {
             margin-bottom: var(--dl-space-space-unit);
           }
           .home-icon10 {
+            fill: var(--dl-color-gray-white);
             width: 2em;
             height: 2em;
             margin-bottom: var(--dl-space-space-halfunit);
           }
           .home-text28 {
+            color: var(--dl-color-gray-white);
             font-weight: 600;
             margin-bottom: var(--dl-space-space-unit);
           }
           .home-text29 {
-            color: var(--dl-color-gray-500);
+            color: var(--dl-color-gray-white);
           }
           .home-feature-card3 {
             width: 100%;
@@ -486,16 +494,18 @@ const Home = (props) => {
             margin-bottom: var(--dl-space-space-unit);
           }
           .home-icon14 {
+            fill: var(--dl-color-gray-white);
             width: 2em;
             height: 2em;
             margin-bottom: var(--dl-space-space-halfunit);
           }
           .home-text39 {
+            color: var(--dl-color-gray-white);
             font-weight: 600;
             margin-bottom: var(--dl-space-space-unit);
           }
           .home-text40 {
-            color: var(--dl-color-gray-500);
+            color: var(--dl-color-gray-white);
           }
           .home-image {
             width: 450px;
@@ -720,8 +730,10 @@ const Home = (props) => {
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
+              background-color: var(--dl-color-gray-black);
             }
             .home-text {
+              color: var(--dl-color-gray-white);
               font-size: 3rem;
             }
             .home-container01 {
@@ -734,30 +746,58 @@ const Home = (props) => {
             .home-feature-card {
               max-width: auto;
             }
+            .home-icon02 {
+              fill: var(--dl-color-gray-white);
+            }
             .home-text04 {
+              color: var(--dl-color-gray-white);
               font-style: normal;
               font-weight: 600;
+            }
+            .home-text05 {
+              color: var(--dl-color-gray-white);
             }
             .home-feature-card1 {
               max-width: auto;
             }
+            .home-icon06 {
+              fill: var(--dl-color-gray-white);
+            }
             .home-text19 {
+              color: var(--dl-color-gray-white);
               font-style: normal;
               font-weight: 600;
+            }
+            .home-text20 {
+              color: var(--dl-color-gray-white);
             }
             .home-feature-card2 {
               max-width: auto;
             }
+            .home-icon10 {
+              fill: var(--dl-color-gray-white);
+            }
             .home-text28 {
+              color: var(--dl-color-gray-white);
               font-style: normal;
               font-weight: 600;
+            }
+            .home-text29 {
+              color: var(--dl-color-gray-white);
             }
             .home-feature-card3 {
               max-width: auto;
             }
+            .home-icon14 {
+              fill: var(--dl-color-gray-white);
+            }
             .home-text39 {
+              color: var(--dl-color-gray-white);
               font-style: normal;
               font-weight: 600;
+            }
+            .home-text40 {
+              color: var(--dl-color-gray-white);
             }
             .home-image {
               width: 250px;
@@ -766,6 +806,7 @@ const Home = (props) => {
             .home-gallery {
               padding: var(--dl-space-space-unit);
               flex-direction: column;
+              background-color: var(--dl-color-gray-black);
             }
             .home-container03 {
               width: 100%;
@@ -779,6 +820,10 @@ const Home = (props) => {
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
+              background-color: var(--dl-color-gray-black);
+            }
+            .home-container09 {
+              background-color: var(--dl-color-gray-black);
             }
             .home-testimonial {
               align-items: center;
