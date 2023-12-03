@@ -478,7 +478,7 @@ const Home = (props) => {
                 rel="noreferrer noopener"
                 className="home-link1"
               >
-                <span>Coded By 011.ninja</span>
+                <span> ® Coded By 011.ninja</span>
                 <br></br>
               </a>
             </div>
