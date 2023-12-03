@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
+import Script from 'dangerous-html/react'
+
 import Header from '../components/header'
 import Hero from '../components/hero'
 import GalleryCard2 from '../components/gallery-card2'
@@ -307,16 +309,28 @@ const Home = (props) => {
           ></BlogPostCard4>
         </div>
         <div className="home-container09">
-          <img
-            src="/4k%20front%20isometric-900w.webp"
-            alt="image"
-            className="home-image1"
-          />
+          <div className="home-container10">
+            <img
+              src="/4k%20front%20isometric-800w.webp"
+              alt="image"
+              className="home-image1"
+            />
+          </div>
+          <div className="home-container11">
+            <span className="home-text50">Contact Us</span>
+            <div>
+              <div className="home-container13">
+                <Script
+                  html={`<script type="text/javascript" src="https://form.jotform.com/jsform/230535702121038"></script>`}
+                ></Script>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="home-testimonial">
-          <div className="home-container10">
-            <div className="home-container11">
-              <div className="home-container12">
+          <div className="home-container14">
+            <div className="home-container15">
+              <div className="home-container16">
                 <TestimonialCard2
                   name="Joe A."
                   quote="It is an incredible place outside of technology but you still have the accessibility to the phone another concept and the beautiful view of the beach of 10 and the attention and cleanliness 10 with a rustic and pleasant style it is worth visiting very accessible I recommend Easter where the waters are most crystal clear and relaxed magnificent concept."
@@ -333,7 +347,7 @@ const Home = (props) => {
                 rootClassName="rootClassName2"
               ></TestimonialCard2>
             </div>
-            <div className="home-container13">
+            <div className="home-container17">
               <TestimonialCard4
                 name="Sarah D."
                 quote="I visited Sabancuy many years ago and just recently, the beaches there are absolutely wonderful, never seaweed, or dirt. You can walk into the water 100’ deep and it will reach your chest. The nature is amazing, the beautiful surrounding. Simply amazing"
@@ -594,14 +608,33 @@ const Home = (props) => {
             height: auto;
             display: flex;
             padding: var(--dl-space-space-threeunits);
-            align-items: center;
-            justify-content: center;
+          }
+          .home-container10 {
+            flex: 0 0 auto;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
           }
           .home-image1 {
-            width: 60%;
-            align-self: center;
+            width: 100%;
+            padding: var(--dl-space-space-twounits);
             object-fit: cover;
             border-radius: 10px;
+          }
+          .home-container11 {
+            flex: 0 0 auto;
+            width: 50%;
+            height: auto;
+            display: flex;
+            padding: var(--dl-space-space-twounits);
+            flex-direction: column;
+          }
+          .home-text50 {
+            color: var(--dl-color-gray-white);
+            font-size: 48px;
+          }
+          .home-container13 {
+            display: contents;
           }
           .home-testimonial {
             width: 100%;
@@ -613,14 +646,14 @@ const Home = (props) => {
             background-position: center;
             background-attachment: fixed;
           }
-          .home-container10 {
+          .home-container14 {
             display: flex;
             padding: var(--dl-space-space-threeunits);
             max-width: var(--dl-size-size-maxwidth);
             align-items: stretch;
             justify-content: space-between;
           }
-          .home-container11 {
+          .home-container15 {
             flex: 2;
             height: auto;
             display: flex;
@@ -629,14 +662,14 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container12 {
+          .home-container16 {
             display: flex;
             align-items: flex-start;
             margin-bottom: var(--dl-space-space-twounits);
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container13 {
+          .home-container17 {
             flex: 1;
             display: flex;
             align-items: center;
@@ -679,10 +712,10 @@ const Home = (props) => {
             .home-container08 {
               width: 100%;
             }
-            .home-container10 {
+            .home-container14 {
               flex-direction: column;
             }
-            .home-container11 {
+            .home-container15 {
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
             }
@@ -722,7 +755,7 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-twounits);
               flex-direction: column;
             }
-            .home-container10 {
+            .home-container14 {
               max-width: 100%;
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
@@ -833,14 +866,14 @@ const Home = (props) => {
             .home-testimonial {
               align-items: center;
             }
-            .home-container10 {
+            .home-container14 {
               max-width: 100%;
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .home-container11 {
+            .home-container15 {
               align-items: center;
               justify-content: center;
             }
