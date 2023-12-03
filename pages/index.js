@@ -253,7 +253,7 @@ const Home = (props) => {
               </button>
               <img
                 alt="image"
-                src="/maarten-van-den-heuvel-siuwr3ucir0-unsplash-500w.jpg"
+                src="/maarten-van-den-heuvel-siuwr3ucir0-unsplash-600w.jpg"
                 data-aos="fade"
                 className="home-image gradient-box"
               />
@@ -317,8 +317,8 @@ const Home = (props) => {
         <div className="home-container10">
           <div className="home-container11">
             <img
-              src="/4k%20front%20isometric-1500w.webp"
               alt="image"
+              src="/4k%20front%20isometric-1500w.webp"
               className="home-image1 gradient-box"
             />
           </div>
@@ -452,7 +452,9 @@ const Home = (props) => {
                   />
                 </span>
                 <br></br>
-                <span>Tel: 52.924.114.8284</span>
+              </span>
+              <span className="home-text65">
+                <span>Tel : 52.924.114.8284</span>
                 <br></br>
               </span>
             </div>
@@ -848,6 +850,10 @@ const Home = (props) => {
             font-size: 34px;
             margin-top: var(--dl-space-space-threeunits);
           }
+          .home-text65 {
+            color: var(--dl-color-gray-white);
+            font-size: 34px;
+          }
           .home-container16 {
             width: 100%;
             height: 313px;
@@ -943,9 +949,19 @@ const Home = (props) => {
             .home-feature-card3 {
               max-width: 100%;
             }
+            .home-container03 {
+              align-self: center;
+              align-items: center;
+              justify-content: center;
+            }
+            .home-button {
+              width: auto;
+              align-self: center;
+              margin-top: var(--dl-space-space-fourunits);
+            }
             .home-image {
-              width: 448px;
-              height: 448px;
+              width: 550px;
+              height: 550px;
               margin-top: var(--dl-space-space-twounits);
               margin-left: 0px;
               margin-bottom: 0px;
@@ -954,6 +970,7 @@ const Home = (props) => {
               width: 100%;
             }
             .home-container10 {
+              padding: var(--dl-space-space-threeunits);
               flex-direction: column;
             }
             .home-container11 {
@@ -1008,6 +1025,16 @@ const Home = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
               flex-direction: column;
+            }
+            .home-text60 {
+              color: var(--dl-color-gray-white);
+            }
+            .home-text65 {
+              color: var(--dl-color-gray-white);
+              font-size: 34px;
+            }
+            .home-container16 {
+              padding: var(--dl-space-space-twounits);
             }
             .home-container17 {
               max-width: 100%;
@@ -1120,6 +1147,7 @@ const Home = (props) => {
               background-color: var(--dl-color-gray-black);
             }
             .home-container10 {
+              padding: var(--dl-space-space-unit);
               flex-direction: column;
               background-color: var(--dl-color-gray-black);
             }
@@ -1131,6 +1159,16 @@ const Home = (props) => {
             }
             .home-text50 {
               font-size: 38px;
+            }
+            .home-container15 {
+              padding: var(--dl-space-space-unit);
+            }
+            .home-text60 {
+              color: var(--dl-color-gray-white);
+              font-size: 34px;
+            }
+            .home-container16 {
+              padding: var(--dl-space-space-unit);
             }
             .home-testimonial {
               align-items: center;
