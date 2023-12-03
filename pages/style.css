@@ -83,7 +83,14 @@
   display: flex !important;
   transform: translateX(0%) !important;
 }
-
+.gradient-box {
+  width: 100%;
+  border: 3px solid transparent;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  box-sizing: border-box;
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat;
+}
 .Heading {
   font-size: 32px;
   font-family: Oxygen;

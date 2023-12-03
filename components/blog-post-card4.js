@@ -25,7 +25,7 @@ const BlogPostCard4 = (props) => {
             {props.button}
           </a>
         </div>
-        <div>
+        <div className="blog-post-card4-container1">
           <div className="blog-post-card4-container2">
             <Script
               html={`<style>
@@ -86,6 +86,9 @@ const BlogPostCard4 = (props) => {
             font-size: 1.7em;
             text-decoration: none;
           }
+          .blog-post-card4-container1 {
+            display: none;
+          }
           .blog-post-card4-container2 {
             display: contents;
           }
@@ -127,7 +130,7 @@ const BlogPostCard4 = (props) => {
 BlogPostCard4.defaultProps = {
   rootClassName: '',
   imageSrc:
-    'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHZlbmljZXxlbnwwfHx8fDE2MjYyNzIyOTA&ixlib=rb-1.2.1&w=1000',
+    'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHZlbmljZXxlbnwwfHx8fDE2MjYyNzIyOTA&ixlib=rb-1.2.1&w=1500',
   imageAlt: 'image',
   button: 'View Our Suites',
 }

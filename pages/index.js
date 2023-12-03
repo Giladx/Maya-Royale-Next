@@ -57,6 +57,12 @@ const Home = (props) => {
             <br></br>
           </h1>
           <div data-aos="fade-right" className="home-separator"></div>
+          <button
+            data-aos="fade-up"
+            className="home-button button gradient-box"
+          >
+            Schedule Your Vacation
+          </button>
           <div className="home-container01">
             <div className="home-container02">
               <div data-aos="fade-right" className="home-feature-card">
@@ -250,7 +256,7 @@ const Home = (props) => {
               alt="image"
               src="/maarten-van-den-heuvel-siuwr3ucir0-unsplash-500w.jpg"
               data-aos="fade"
-              className="home-image"
+              className="home-image gradient-box"
             />
           </div>
         </div>
@@ -311,26 +317,151 @@ const Home = (props) => {
         <div className="home-container09">
           <div className="home-container10">
             <img
-              src="/4k%20front%20isometric-800w.webp"
               alt="image"
-              className="home-image1"
+              src="/4k%20front%20isometric-800w.webp"
+              className="home-image1 gradient-box"
             />
           </div>
           <div className="home-container11">
             <span className="home-text50">Contact Us</span>
-            <div>
+            <div className="home-container12">
               <div className="home-container13">
                 <Script
-                  html={`<script type="text/javascript" src="https://form.jotform.com/jsform/230535702121038"></script>`}
+                  html={`
+    <iframe
+      id="JotFormIFrame-230535702121038"
+      title="Maya Royale"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/230535702121038"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+    var ifr = document.getElementById("JotFormIFrame-230535702121038");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+            iframe.style.minHeight = args[1] + "px";
+          }
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script>`}
                 ></Script>
               </div>
+            </div>
+            <div className="home-container14">
+              <span className="home-text51">
+                <span>John Duchkar</span>
+                <br></br>
+              </span>
+              <span className="home-text54">
+                <span>Tel : 52.999.107.2593</span>
+                <br></br>
+              </span>
+              <span className="home-text57">
+                <span>US : 504.355.3106</span>
+                <br></br>
+              </span>
+              <span className="home-text60">
+                <span>Habla Espanol</span>
+                <br></br>
+                <span>
+                  Rafael Espino Antonio
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <br></br>
+                <span>Tel: 52.924.114.8284</span>
+                <br></br>
+              </span>
             </div>
           </div>
         </div>
         <div className="home-testimonial">
-          <div className="home-container14">
-            <div className="home-container15">
-              <div className="home-container16">
+          <div className="home-container15">
+            <div className="home-container16">
+              <div className="home-container17">
                 <TestimonialCard2
                   name="Joe A."
                   quote="It is an incredible place outside of technology but you still have the accessibility to the phone another concept and the beautiful view of the beach of 10 and the attention and cleanliness 10 with a rustic and pleasant style it is worth visiting very accessible I recommend Easter where the waters are most crystal clear and relaxed magnificent concept."
@@ -347,7 +478,7 @@ const Home = (props) => {
                 rootClassName="rootClassName2"
               ></TestimonialCard2>
             </div>
-            <div className="home-container17">
+            <div className="home-container18">
               <TestimonialCard4
                 name="Sarah D."
                 quote="I visited Sabancuy many years ago and just recently, the beaches there are absolutely wonderful, never seaweed, or dirt. You can walk into the water 100’ deep and it will reach your chest. The nature is amazing, the beautiful surrounding. Simply amazing"
@@ -387,6 +518,23 @@ const Home = (props) => {
             width: 100px;
             height: 2px;
             background-color: var(--dl-color-gray-500);
+          }
+          .home-button {
+            color: var(--dl-color-gray-white);
+            width: 434px;
+            font-size: 35px;
+            align-self: flex-end;
+            transition: 0.3s;
+            padding-top: var(--dl-space-space-unit);
+            border-width: 0px;
+            padding-left: var(--dl-space-space-twounits);
+            padding-right: var(--dl-space-space-twounits);
+            padding-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
+            background-color: var(--dl-color-gray-black);
+          }
+          .home-button:hover {
+            transform: scale(1.02);
           }
           .home-container01 {
             flex: 0 0 auto;
@@ -617,7 +765,7 @@ const Home = (props) => {
           }
           .home-image1 {
             width: 100%;
-            padding: var(--dl-space-space-twounits);
+            padding: var(--dl-space-space-halfunit);
             object-fit: cover;
             border-radius: 10px;
           }
@@ -632,9 +780,40 @@ const Home = (props) => {
           .home-text50 {
             color: var(--dl-color-gray-white);
             font-size: 48px;
+            text-transform: uppercase;
+          }
+          .home-container12 {
+            width: 100%;
           }
           .home-container13 {
             display: contents;
+          }
+          .home-container14 {
+            flex: 0 0 auto;
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: var(--dl-space-space-threeunits);
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-text51 {
+            color: var(--dl-color-gray-white);
+            font-size: 34px;
+            margin-top: var(--dl-space-space-threeunits);
+          }
+          .home-text54 {
+            color: var(--dl-color-gray-white);
+            font-size: 34px;
+          }
+          .home-text57 {
+            color: var(--dl-color-gray-white);
+            font-size: 34px;
+          }
+          .home-text60 {
+            color: var(--dl-color-gray-white);
+            font-size: 34px;
+            margin-top: var(--dl-space-space-threeunits);
           }
           .home-testimonial {
             width: 100%;
@@ -646,14 +825,14 @@ const Home = (props) => {
             background-position: center;
             background-attachment: fixed;
           }
-          .home-container14 {
+          .home-container15 {
             display: flex;
             padding: var(--dl-space-space-threeunits);
             max-width: var(--dl-size-size-maxwidth);
             align-items: stretch;
             justify-content: space-between;
           }
-          .home-container15 {
+          .home-container16 {
             flex: 2;
             height: auto;
             display: flex;
@@ -662,14 +841,14 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container16 {
+          .home-container17 {
             display: flex;
             align-items: flex-start;
             margin-bottom: var(--dl-space-space-twounits);
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-container17 {
+          .home-container18 {
             flex: 1;
             display: flex;
             align-items: center;
@@ -681,6 +860,12 @@ const Home = (props) => {
             }
             .home-text {
               width: 100%;
+            }
+          }
+          @media (max-width: 1200px) {
+            .home-button {
+              color: var(--dl-color-gray-white);
+              background-color: var(--dl-color-gray-black);
             }
           }
           @media (max-width: 991px) {
@@ -712,10 +897,10 @@ const Home = (props) => {
             .home-container08 {
               width: 100%;
             }
-            .home-container14 {
+            .home-container15 {
               flex-direction: column;
             }
-            .home-container15 {
+            .home-container16 {
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
             }
@@ -755,7 +940,7 @@ const Home = (props) => {
               padding-right: var(--dl-space-space-twounits);
               flex-direction: column;
             }
-            .home-container14 {
+            .home-container15 {
               max-width: 100%;
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
@@ -773,6 +958,10 @@ const Home = (props) => {
             .home-text {
               color: var(--dl-color-gray-white);
               font-size: 3rem;
+            }
+            .home-button {
+              font-size: 24px;
+              text-align: center;
             }
             .home-container01 {
               align-items: center;
@@ -866,14 +1055,14 @@ const Home = (props) => {
             .home-testimonial {
               align-items: center;
             }
-            .home-container14 {
+            .home-container15 {
               max-width: 100%;
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .home-container15 {
+            .home-container16 {
               align-items: center;
               justify-content: center;
             }

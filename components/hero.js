@@ -13,24 +13,15 @@ const Hero = (props) => {
         <span data-aos="fade-down" className="hero-text2">
           So you can be yourself
         </span>
-        <a
-          href={props.heroButtonLink}
-          data-aos="fade-up"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="hero-link button"
-        >
-          {props.heroButtonText}
-        </a>
         <div className="hero-container">
           <img
-            src={props.imagesrc2}
             alt={props.imagealt2}
+            src={props.imagesrc2}
             className="hero-image"
           />
           <img
-            src={props.imagesrc}
             alt={props.imagealt}
+            src={props.imagesrc}
             className="hero-image1"
           />
         </div>
@@ -72,23 +63,6 @@ const Hero = (props) => {
             margin-bottom: var(--dl-space-space-twounits);
             letter-spacing: 2px;
           }
-          .hero-link {
-            color: var(--dl-color-gray-white);
-            width: 434px;
-            font-size: 35px;
-            align-self: center;
-            transition: 0.3s;
-            padding-top: var(--dl-space-space-unit);
-            border-width: 0px;
-            padding-left: var(--dl-space-space-twounits);
-            padding-right: var(--dl-space-space-twounits);
-            padding-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
-            background-color: var(--dl-color-gray-black);
-          }
-          .hero-link:hover {
-            transform: scale(1.02);
-          }
           .hero-container {
             width: 100%;
             height: 400px;
@@ -118,10 +92,6 @@ const Hero = (props) => {
             min-height: auto;
           }
           @media (max-width: 1200px) {
-            .hero-link {
-              color: var(--dl-color-gray-white);
-              background-color: var(--dl-color-gray-black);
-            }
             .hero-image {
               height: auto;
             }
@@ -168,10 +138,6 @@ const Hero = (props) => {
               margin-bottom: var(--dl-space-space-threeunits);
               letter-spacing: 2px;
             }
-            .hero-link {
-              font-size: 24px;
-              text-align: center;
-            }
             .hero-image {
               width: 300px;
             }
@@ -187,43 +153,43 @@ const Hero = (props) => {
 }
 
 Hero.defaultProps = {
-  text: 'Palmer Peninsula, Yucatan Mexico',
-  heroButtonLink: '',
-  heading: 'Mexico Kosher Resort',
-  rootClassName: '',
-  heroButtonText: 'Schedule  Your Vacation',
-  text1: 'Palmer Peninsula, Yucatan Mexico',
   imagesrc: '/text2-200h.png',
-  imagealt: 'image',
-  imagesrc1: 'ee494990-5da0-46c6-8c7e-b2075b7bd65a',
   imagealt1: 'image',
   imagesrc2: '/text1-200h.png',
   imagealt2: 'image',
-  imagesrc3: '379b70d9-5a6c-4dbe-959a-5e143321ce63',
-  imagealt3: 'image',
-  imagesrc4: '5060ef02-7fd5-436a-945d-0b6f103126bc',
-  imagealt4: 'image',
+  text: 'Palmer Peninsula, Yucatan Mexico',
+  text1: 'Palmer Peninsula, Yucatan Mexico',
+  heroButtonLink: '',
   text2: 'בס"ד',
+  imagealt: 'image',
+  imagealt4: 'image',
+  imagesrc4: '5060ef02-7fd5-436a-945d-0b6f103126bc',
+  imagesrc1: 'ee494990-5da0-46c6-8c7e-b2075b7bd65a',
+  imagesrc3: '379b70d9-5a6c-4dbe-959a-5e143321ce63',
+  heading: 'Mexico Kosher Resort',
+  rootClassName: '',
+  imagealt3: 'image',
+  heroButtonText: 'Schedule  Your Vacation',
 }
 
 Hero.propTypes = {
-  text: PropTypes.string,
-  heroButtonLink: PropTypes.string,
-  heading: PropTypes.string,
-  rootClassName: PropTypes.string,
-  heroButtonText: PropTypes.string,
-  text1: PropTypes.string,
   imagesrc: PropTypes.string,
-  imagealt: PropTypes.string,
-  imagesrc1: PropTypes.string,
   imagealt1: PropTypes.string,
   imagesrc2: PropTypes.string,
   imagealt2: PropTypes.string,
-  imagesrc3: PropTypes.string,
-  imagealt3: PropTypes.string,
-  imagesrc4: PropTypes.string,
-  imagealt4: PropTypes.string,
+  text: PropTypes.string,
+  text1: PropTypes.string,
+  heroButtonLink: PropTypes.string,
   text2: PropTypes.string,
+  imagealt: PropTypes.string,
+  imagealt4: PropTypes.string,
+  imagesrc4: PropTypes.string,
+  imagesrc1: PropTypes.string,
+  imagesrc3: PropTypes.string,
+  heading: PropTypes.string,
+  rootClassName: PropTypes.string,
+  imagealt3: PropTypes.string,
+  heroButtonText: PropTypes.string,
 }
 
 export default Hero
