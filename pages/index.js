@@ -953,6 +953,16 @@ const Home = (props) => {
             .home-container09 {
               width: 100%;
             }
+            .home-container10 {
+              flex-direction: column;
+            }
+            .home-container11 {
+              width: 100%;
+              margin-bottom: var(--dl-space-space-threeunits);
+            }
+            .home-container12 {
+              width: 100%;
+            }
             .home-container17 {
               flex-direction: column;
             }
