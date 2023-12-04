@@ -10,8 +10,8 @@ const GalleryCard2 = (props) => {
         className={`gallery-card2-gallery-card gradient-box ${props.rootClassName} `}
       >
         <img
-          alt={props.imageAlt}
-          src={props.imageSrc}
+          alt={props.image_alt}
+          src={props.image_src}
           className="gallery-card2-image"
         />
         <div className="gallery-card2-container">
@@ -131,18 +131,18 @@ const GalleryCard2 = (props) => {
 }
 
 GalleryCard2.defaultProps = {
-  imageSrc:
+  image_src:
     'https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxmb29kfGVufDB8fHx8MTYyNjQ0OTIzNQ&ixlib=rb-1.2.1&w=1500',
   rootClassName: '',
-  imageAlt: 'image',
+  image_alt: 'image',
   title: 'Project Title',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
 }
 
 GalleryCard2.propTypes = {
-  imageSrc: PropTypes.string,
+  image_src: PropTypes.string,
   rootClassName: PropTypes.string,
-  imageAlt: PropTypes.string,
+  image_alt: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
 }

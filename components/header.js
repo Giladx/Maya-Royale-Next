@@ -11,8 +11,8 @@ const Header = (props) => {
           <Link href="/">
             <a className="header-link">
               <img
-                alt={props.logoAlt}
-                src={props.logoSrcURL}
+                alt={props.Logo_alt}
+                src={props.LogoSrcURL}
                 loading="lazy"
                 data-aos="fade-left"
                 className="header-logo"
@@ -30,56 +30,56 @@ const Header = (props) => {
               className="header-nav"
             >
               <a
-                href={props.linkURL1}
+                href={props.LinkURL1}
                 data-aos="fade"
                 className="header-link01"
               >
-                {props.linkText1}
+                {props.LinkText1}
               </a>
               <a
-                href={props.linkURL2}
+                href={props.LinkURL2}
                 data-aos="fade"
                 className="header-link02"
               >
-                {props.linkText2}
+                {props.LinkText2}
               </a>
               <a
-                href={props.linkURL3}
+                href={props.LinkURL3}
                 data-aos="fade"
                 className="header-link03"
               >
-                {props.linkText3}
+                {props.LinkText3}
               </a>
               <a
-                href={props.linkURL4}
+                href={props.LinkURL4}
                 data-aos="fade"
                 className="header-link04"
               >
-                {props.linkText4}
+                {props.LinkText4}
               </a>
               <a
-                href={props.linkURL5}
+                href={props.LinkURL5}
                 data-aos="fade"
                 className="header-link05"
               >
-                {props.linkText5}
+                {props.LinkText5}
               </a>
             </nav>
           </div>
           <div data-thq="thq-navbar-btn-group" className="header-btn-group">
             <a
-              href={props.linkButton3}
+              href={props.LinkButton3}
               data-aos="fade"
               className="header-login button"
             >
-              {props.linkButton1}
+              {props.LinkButton1}
             </a>
             <a
-              href={props.linkButton2}
+              href={props.LinkButton2}
               data-aos="fade"
               className="header-register button"
             >
-              {props.register}
+              {props.Register}
             </a>
           </div>
           <div data-thq="thq-burger-menu" className="header-burger-menu">
@@ -97,8 +97,8 @@ const Header = (props) => {
                 <Link href="/">
                   <a className="header-link06">
                     <img
-                      alt={props.mLogoAlt}
-                      src={props.imageSrc}
+                      alt={props.MLogoAlt}
+                      src={props.image_src}
                       className="header-image"
                     />
                   </a>
@@ -114,31 +114,31 @@ const Header = (props) => {
                 data-role="Nav"
                 className="header-nav2"
               >
-                <a href={props.mLinkURL1} className="header-link07">
-                  {props.mLinkText1}
+                <a href={props.MLinkURL1} className="header-link07">
+                  {props.MLinkText1}
                 </a>
-                <a href={props.mLinkURL2} className="header-link08">
-                  {props.mLinkText2}
+                <a href={props.MLinkURL2} className="header-link08">
+                  {props.MLinkText2}
                 </a>
-                <a href={props.mLinkURL3} className="header-link09">
-                  {props.mLinkText3}
+                <a href={props.MLinkURL3} className="header-link09">
+                  {props.MLinkText3}
                 </a>
-                <a href={props.mLinkURL4} className="header-link10">
-                  {props.mLinkText4}
+                <a href={props.MLinkURL4} className="header-link10">
+                  {props.MLinkText4}
                 </a>
-                <a href={props.mLinkURL5} className="header-link11">
-                  {props.mLinkText5}
+                <a href={props.MLinkURL5} className="header-link11">
+                  {props.MLinkText5}
                 </a>
               </nav>
               <div className="header-container1">
-                <a href={props.mButtonLink1} className="header-login1 button">
-                  {props.mButtonText1}
+                <a href={props.MButtonLink1} className="header-login1 button">
+                  {props.MButtonText1}
                 </a>
                 <a
-                  href={props.mButtonLink2}
+                  href={props.MButtonLink2}
                   className="header-register1 button"
                 >
-                  {props.mButtonText2}
+                  {props.MButtonText2}
                 </a>
               </div>
             </div>
@@ -501,75 +501,75 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
-  mLinkURL3: '',
-  linkURL3: '',
-  mLinkURL4: '',
-  mLinkText3: 'Restaurant',
+  MLinkURL3: '',
+  LinkURL3: '',
+  MLinkURL4: '',
+  MLinkText3: 'Restaurant',
   rootClassName: '',
-  linkText3: 'Restaurant',
-  linkText1: 'About',
-  mButtonLink2: '',
-  mButtonText1: 'Order',
-  mButtonText2: 'Contact',
-  linkButton3: '',
-  linkButton2: '',
-  linkText4: 'Club',
-  logoSrcURL: '/mayalogo-1500h.png',
-  mLinkText1: 'About',
-  linkText5: 'Stuff',
-  linkButton1: 'Contact',
-  linkURL4: '',
-  mButtonLink1: '',
-  linkURL5: '',
-  imageSrc: '/mayalogo-1500h.png',
-  mLinkText5: 'Stuff',
-  mLinkURL5: '',
-  mLinkURL2: '',
-  linkURL1: '',
-  register: 'Order',
-  logoAlt: 'logo',
-  mLinkText4: 'Club',
-  linkText2: 'Resort',
-  mLinkText2: 'Resort',
-  mLogoAlt: 'image',
-  linkURL2: '',
-  mLinkURL1: '',
+  LinkText3: 'Restaurant',
+  LinkText1: 'About',
+  MButtonLink2: '',
+  MButtonText1: 'Order',
+  MButtonText2: 'Contact',
+  LinkButton3: '',
+  LinkButton2: '',
+  LinkText4: 'Club',
+  LogoSrcURL: '/mayalogo-1500h.png',
+  MLinkText1: 'About',
+  LinkText5: 'Stuff',
+  LinkButton1: 'Contact',
+  LinkURL4: '',
+  MButtonLink1: '',
+  LinkURL5: '',
+  image_src: '/mayalogo-1500h.png',
+  MLinkText5: 'Stuff',
+  MLinkURL5: '',
+  MLinkURL2: '',
+  LinkURL1: '',
+  Register: 'Order',
+  Logo_alt: 'logo',
+  MLinkText4: 'Club',
+  LinkText2: 'Resort',
+  MLinkText2: 'Resort',
+  MLogoAlt: 'image',
+  LinkURL2: '',
+  MLinkURL1: '',
 }
 
 Header.propTypes = {
-  mLinkURL3: PropTypes.string,
-  linkURL3: PropTypes.string,
-  mLinkURL4: PropTypes.string,
-  mLinkText3: PropTypes.string,
+  MLinkURL3: PropTypes.string,
+  LinkURL3: PropTypes.string,
+  MLinkURL4: PropTypes.string,
+  MLinkText3: PropTypes.string,
   rootClassName: PropTypes.string,
-  linkText3: PropTypes.string,
-  linkText1: PropTypes.string,
-  mButtonLink2: PropTypes.string,
-  mButtonText1: PropTypes.string,
-  mButtonText2: PropTypes.string,
-  linkButton3: PropTypes.string,
-  linkButton2: PropTypes.string,
-  linkText4: PropTypes.string,
-  logoSrcURL: PropTypes.string,
-  mLinkText1: PropTypes.string,
-  linkText5: PropTypes.string,
-  linkButton1: PropTypes.string,
-  linkURL4: PropTypes.string,
-  mButtonLink1: PropTypes.string,
-  linkURL5: PropTypes.string,
-  imageSrc: PropTypes.string,
-  mLinkText5: PropTypes.string,
-  mLinkURL5: PropTypes.string,
-  mLinkURL2: PropTypes.string,
-  linkURL1: PropTypes.string,
-  register: PropTypes.string,
-  logoAlt: PropTypes.string,
-  mLinkText4: PropTypes.string,
-  linkText2: PropTypes.string,
-  mLinkText2: PropTypes.string,
-  mLogoAlt: PropTypes.string,
-  linkURL2: PropTypes.string,
-  mLinkURL1: PropTypes.string,
+  LinkText3: PropTypes.string,
+  LinkText1: PropTypes.string,
+  MButtonLink2: PropTypes.string,
+  MButtonText1: PropTypes.string,
+  MButtonText2: PropTypes.string,
+  LinkButton3: PropTypes.string,
+  LinkButton2: PropTypes.string,
+  LinkText4: PropTypes.string,
+  LogoSrcURL: PropTypes.string,
+  MLinkText1: PropTypes.string,
+  LinkText5: PropTypes.string,
+  LinkButton1: PropTypes.string,
+  LinkURL4: PropTypes.string,
+  MButtonLink1: PropTypes.string,
+  LinkURL5: PropTypes.string,
+  image_src: PropTypes.string,
+  MLinkText5: PropTypes.string,
+  MLinkURL5: PropTypes.string,
+  MLinkURL2: PropTypes.string,
+  LinkURL1: PropTypes.string,
+  Register: PropTypes.string,
+  Logo_alt: PropTypes.string,
+  MLinkText4: PropTypes.string,
+  LinkText2: PropTypes.string,
+  MLinkText2: PropTypes.string,
+  MLogoAlt: PropTypes.string,
+  LinkURL2: PropTypes.string,
+  MLinkURL1: PropTypes.string,
 }
 
 export default Header

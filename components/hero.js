@@ -8,7 +8,7 @@ const Hero = (props) => {
       <div data-aos="fade" className={`hero-hero ${props.rootClassName} `}>
         <span className="hero-text">{props.text2}</span>
         <h1 data-aos="fade-down" className="hero-text1">
-          {props.heading}
+          {props.Heading}
         </h1>
         <span data-aos="fade-down" className="hero-text2">
           So you can be yourself
@@ -159,17 +159,17 @@ Hero.defaultProps = {
   imagealt2: 'image',
   text: 'Palmer Peninsula, Yucatan Mexico',
   text1: 'Palmer Peninsula, Yucatan Mexico',
-  heroButtonLink: '',
+  HeroButtonLink: '',
   text2: 'בס"ד',
   imagealt: 'image',
   imagealt4: 'image',
   imagesrc4: '5060ef02-7fd5-436a-945d-0b6f103126bc',
   imagesrc1: 'ee494990-5da0-46c6-8c7e-b2075b7bd65a',
   imagesrc3: '379b70d9-5a6c-4dbe-959a-5e143321ce63',
-  heading: 'Mexico Kosher Resort',
+  Heading: 'Mexico Kosher Resort',
   rootClassName: '',
   imagealt3: 'image',
-  heroButtonText: 'Schedule  Your Vacation',
+  HeroButtonText: 'Schedule  Your Vacation',
 }
 
 Hero.propTypes = {
@@ -179,17 +179,17 @@ Hero.propTypes = {
   imagealt2: PropTypes.string,
   text: PropTypes.string,
   text1: PropTypes.string,
-  heroButtonLink: PropTypes.string,
+  HeroButtonLink: PropTypes.string,
   text2: PropTypes.string,
   imagealt: PropTypes.string,
   imagealt4: PropTypes.string,
   imagesrc4: PropTypes.string,
   imagesrc1: PropTypes.string,
   imagesrc3: PropTypes.string,
-  heading: PropTypes.string,
+  Heading: PropTypes.string,
   rootClassName: PropTypes.string,
   imagealt3: PropTypes.string,
-  heroButtonText: PropTypes.string,
+  HeroButtonText: PropTypes.string,
 }
 
 export default Hero

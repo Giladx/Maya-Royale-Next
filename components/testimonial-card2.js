@@ -17,8 +17,8 @@ const TestimonialCard2 = (props) => {
           <span className="testimonial-card2-text1">{props.name}</span>
         </div>
         <img
-          alt={props.profileAlt}
-          src={props.profileSrc}
+          alt={props.profile_alt}
+          src={props.profile_src}
           className="testimonial-card2-image"
         />
       </div>
@@ -124,18 +124,18 @@ TestimonialCard2.defaultProps = {
   name: 'John Doe',
   quote:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem lorem, malesuada in metus vitae, scelerisque accumsan ipsum.',
-  profileSrc:
+  profile_src:
     'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxwb3J0cmFpdHxlbnwwfHx8fDE2MjYzNzg5NzI&ixlib=rb-1.2.1&h=1200',
   rootClassName: '',
-  profileAlt: 'profile',
+  profile_alt: 'profile',
 }
 
 TestimonialCard2.propTypes = {
   name: PropTypes.string,
   quote: PropTypes.string,
-  profileSrc: PropTypes.string,
+  profile_src: PropTypes.string,
   rootClassName: PropTypes.string,
-  profileAlt: PropTypes.string,
+  profile_alt: PropTypes.string,
 }
 
 export default TestimonialCard2

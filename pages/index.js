@@ -30,19 +30,19 @@ const Home = (props) => {
           />
         </Head>
         <Header
-          linkURL1="/about"
-          linkURL2="https://mayaroyale.com"
-          linkURL4="https://mas-tul.com"
-          mLinkURL1="/about"
-          mLinkURL2="https://mayaroyale.com"
-          mLinkURL4="https://mas-tul.com"
-          linkButton2="https://booking.mayaroyale.com"
-          mButtonLink1="https://booking.mayaroyale.com"
+          LinkURL1="/about"
+          LinkURL2="https://mayaroyale.com"
+          LinkURL4="https://mas-tul.com"
+          MLinkURL1="/about"
+          MLinkURL2="https://mayaroyale.com"
+          MLinkURL4="https://mas-tul.com"
+          LinkButton2="https://booking.mayaroyale.com"
+          MButtonLink1="https://booking.mayaroyale.com"
           rootClassName="header-root-class-name1"
         ></Header>
         <Hero
           rootClassName="hero-root-class-name"
-          heroButtonLink="https://booking.mayaroyale.com/"
+          HeroButtonLink="https://booking.mayaroyale.com/"
         ></Hero>
         <div className="home-features">
           <h1 data-aos="fade-right" className="home-text">
@@ -271,27 +271,27 @@ const Home = (props) => {
             <div className="home-container05">
               <div className="home-container06">
                 <GalleryCard2
-                  imageSrc="/1-1500h.webp"
+                  image_src="/1-1500h.webp"
                   rootClassName="rootClassName2"
                 ></GalleryCard2>
               </div>
               <div className="home-container07">
                 <GalleryCard2
-                  imageSrc="/suite-1500w.webp"
+                  image_src="/suite-1500w.webp"
                   rootClassName="rootClassName3"
                 ></GalleryCard2>
               </div>
             </div>
             <div className="home-container08">
               <GalleryCard2
-                imageSrc="/10_19%20-%20foto1-1500h.jpg"
+                image_src="/10_19%20-%20foto1-1500h.jpg"
                 rootClassName="rootClassName"
               ></GalleryCard2>
             </div>
           </div>
           <div className="home-container09">
             <GalleryCard2
-              imageSrc="/12-1500h.webp"
+              image_src="/12-1500h.webp"
               rootClassName="rootClassName4"
             ></GalleryCard2>
           </div>
@@ -299,24 +299,24 @@ const Home = (props) => {
         <div className="home-blog">
           <BlogPostCard4
             label="Travel"
-            imageSrc="/10-1500w.webp"
+            image_src="/10-1500w.webp"
             rootClassName="rootClassName1"
           ></BlogPostCard4>
           <BlogPostCard4
             label="Club Party"
             button=" Our Restaurants"
-            imageSrc="/30-1500w.webp"
+            image_src="/30-1500w.webp"
             rootClassName="rootClassName2"
           ></BlogPostCard4>
           <BlogPostCard4
             button="View Our Resort"
-            imageSrc="/23-1500w.webp"
+            image_src="/23-1500w.webp"
             rootClassName="rootClassName3"
           ></BlogPostCard4>
           <BlogPostCard4
             date="JULY 10"
             button="Tour Our Bars"
-            imageSrc="/42-1500w.webp"
+            image_src="/42-1500w.webp"
             rootClassName="rootClassName4"
           ></BlogPostCard4>
         </div>
@@ -509,8 +509,8 @@ const Home = (props) => {
                     <br></br>
                   </span>
                   <img
-                    src="/ninjalogo.svg"
                     alt="image"
+                    src="/ninjalogo.svg"
                     className="home-image2"
                   />
                 </div>
@@ -525,16 +525,16 @@ const Home = (props) => {
                 <TestimonialCard2
                   name="Joe A."
                   quote="It is an incredible place outside of technology but you still have the accessibility to the phone another concept and the beautiful view of the beach of 10 and the attention and cleanliness 10 with a rustic and pleasant style it is worth visiting very accessible I recommend Easter where the waters are most crystal clear and relaxed magnificent concept."
-                  pictureSrc="Joe  A."
-                  profileSrc="https://images.unsplash.com/photo-1614630982169-e89202c5e045?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUyMTk4&amp;ixlib=rb-1.2.1&amp;h=1200"
+                  picture_src="Joe  A."
+                  profile_src="https://images.unsplash.com/photo-1614630982169-e89202c5e045?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUyMTk4&amp;ixlib=rb-1.2.1&amp;h=1200"
                   rootClassName="rootClassName1"
                 ></TestimonialCard2>
               </div>
               <TestimonialCard2
                 name="Debora H."
                 quote="The place is very nice and with a family atmosphere. Very good location, prices vary depending on the area you want to be in. Its attractions are the rest areas as well as the hammocks on the beach and the swing. We rented a small sail boat on the calmocean. We did the tour with dolphins and over 150 birds to see. A very special place."
-                pictureSrc="Sarah D."
-                profileSrc="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwYnd8ZW58MHx8fHwxNjI2NDUyMjQw&amp;ixlib=rb-1.2.1&amp;h=1200"
+                picture_src="Sarah D."
+                profile_src="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwYnd8ZW58MHx8fHwxNjI2NDUyMjQw&amp;ixlib=rb-1.2.1&amp;h=1200"
                 rootClassName="rootClassName2"
               ></TestimonialCard2>
             </div>
@@ -542,8 +542,8 @@ const Home = (props) => {
               <TestimonialCard4
                 name="Sarah D."
                 quote="I visited Sabancuy many years ago and just recently, the beaches there are absolutely wonderful, never seaweed, or dirt. You can walk into the water 100’ deep and it will reach your chest. The nature is amazing, the beautiful surrounding. Simply amazing"
-                pictureSrc="https://images.unsplash.com/photo-1546456073-ea246a7bd25f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fGJsYWNrJTIwbWFufGVufDB8fHx8MTYyNjQ1MjAwOA&amp;ixlib=rb-1.2.1&amp;h=1200"
-                profileSrc="https://images.unsplash.com/photo-1553184118-d20774c4c1db?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxwb3J0cmFpdCUyMGJ3fGVufDB8fHx8MTYyNjQ1MjI0MA&amp;ixlib=rb-1.2.1&amp;h=1200"
+                picture_src="https://images.unsplash.com/photo-1546456073-ea246a7bd25f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fGJsYWNrJTIwbWFufGVufDB8fHx8MTYyNjQ1MjAwOA&amp;ixlib=rb-1.2.1&amp;h=1200"
+                profile_src="https://images.unsplash.com/photo-1553184118-d20774c4c1db?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxwb3J0cmFpdCUyMGJ3fGVufDB8fHx8MTYyNjQ1MjI0MA&amp;ixlib=rb-1.2.1&amp;h=1200"
                 rootClassName="rootClassName"
               ></TestimonialCard4>
             </div>
@@ -750,7 +750,6 @@ const Home = (props) => {
             box-shadow: 5px 5px 20px 0px #8a8a8a;
             object-fit: cover;
             flex-shrink: 0;
-            margin-left: var(--dl-space-space-fourunits);
             border-radius: var(--dl-radius-radius-round);
             object-position: left;
           }
@@ -903,13 +902,12 @@ const Home = (props) => {
             padding-left: var(--dl-space-space-threeunits);
             padding-right: var(--dl-space-space-threeunits);
             flex-direction: column;
+            justify-content: flex-end;
           }
           .home-link4 {
             color: var(--dl-color-gray-white);
             cursor: pointer;
             font-size: 24px;
-            margin-top: var(--dl-space-space-fiveunits);
-            margin-bottom: var(--dl-space-space-fiveunits);
             text-decoration: none;
           }
           .home-text66 {
@@ -933,7 +931,7 @@ const Home = (props) => {
             color: var(--dl-color-gray-white);
             cursor: pointer;
             height: auto;
-            font-size: 34px;
+            font-size: 28px;
             align-self: center;
             font-family: 'Khand';
           }
@@ -941,8 +939,8 @@ const Home = (props) => {
             font-weight: 700;
           }
           .home-image2 {
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             object-fit: cover;
             margin-left: var(--dl-space-space-twounits);
             margin-right: var(--dl-space-space-twounits);
@@ -993,15 +991,14 @@ const Home = (props) => {
             .home-text {
               width: 100%;
             }
+            .home-container16 {
+              height: 158px;
+            }
           }
           @media (max-width: 1200px) {
             .home-link {
               color: var(--dl-color-gray-white);
               background-color: var(--dl-color-gray-black);
-            }
-            .home-link4 {
-              margin-top: var(--dl-space-space-twounits);
-              margin-bottom: var(--dl-space-space-twounits);
             }
           }
           @media (max-width: 991px) {
@@ -1126,6 +1123,8 @@ const Home = (props) => {
             .home-link4 {
               color: var(--dl-color-gray-white);
               font-size: 24px;
+              margin-top: 0px;
+              margin-bottom: 0px;
               text-decoration: none;
             }
             .home-text66 {
@@ -1136,6 +1135,9 @@ const Home = (props) => {
             }
             .home-text68 {
               font-weight: 700;
+            }
+            .home-container17 {
+              justify-content: flex-start;
             }
             .home-text70 {
               color: var(--dl-color-gray-white);
@@ -1275,13 +1277,29 @@ const Home = (props) => {
             .home-container15 {
               padding: var(--dl-space-space-unit);
             }
+            .home-text51 {
+              font-size: 32px;
+            }
+            .home-link1 {
+              font-size: 32px;
+            }
+            .home-link2 {
+              font-size: 32px;
+            }
             .home-text58 {
               color: var(--dl-color-gray-white);
-              font-size: 34px;
+              font-size: 32px;
+            }
+            .home-link3 {
+              font-size: 32px;
             }
             .home-container16 {
               padding: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-twounits);
+            }
+            .home-link4 {
+              margin-top: 0px;
+              margin-bottom: 0px;
             }
             .home-container17 {
               width: 100%;

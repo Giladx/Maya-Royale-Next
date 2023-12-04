@@ -9,8 +9,8 @@ const Footer = (props) => {
         <div className="footer-container">
           <div className="footer-logo">
             <img
-              alt={props.imageAlt}
-              src={props.imageSrc}
+              alt={props.image_alt}
+              src={props.image_src}
               className="footer-image"
             />
             <span className="footer-text">{props.text1}</span>
@@ -368,8 +368,8 @@ Footer.defaultProps = {
   text7: 'Company',
   text4: 'Pricing',
   text13: 'hello@maya.resort',
-  imageAlt: 'logo',
-  imageSrc: '/mayalogo-1500h.png',
+  image_alt: 'logo',
+  image_src: '/mayalogo-1500h.png',
   text3: 'Features',
 }
 
@@ -390,8 +390,8 @@ Footer.propTypes = {
   text7: PropTypes.string,
   text4: PropTypes.string,
   text13: PropTypes.string,
-  imageAlt: PropTypes.string,
-  imageSrc: PropTypes.string,
+  image_alt: PropTypes.string,
+  image_src: PropTypes.string,
   text3: PropTypes.string,
 }
 

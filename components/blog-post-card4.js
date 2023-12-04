@@ -11,8 +11,8 @@ const BlogPostCard4 = (props) => {
         className={`blog-post-card4-blog-post-card gradient-box ${props.rootClassName} `}
       >
         <img
-          alt={props.imageAlt}
-          src={props.imageSrc}
+          alt={props.image_alt}
+          src={props.image_src}
           className="blog-post-card4-image"
         />
         <div className="blog-post-card4-container">
@@ -129,16 +129,16 @@ const BlogPostCard4 = (props) => {
 
 BlogPostCard4.defaultProps = {
   rootClassName: '',
-  imageSrc:
+  image_src:
     'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHZlbmljZXxlbnwwfHx8fDE2MjYyNzIyOTA&ixlib=rb-1.2.1&w=1500',
-  imageAlt: 'image',
+  image_alt: 'image',
   button: 'View Our Suites',
 }
 
 BlogPostCard4.propTypes = {
   rootClassName: PropTypes.string,
-  imageSrc: PropTypes.string,
-  imageAlt: PropTypes.string,
+  image_src: PropTypes.string,
+  image_alt: PropTypes.string,
   button: PropTypes.string,
 }
 
